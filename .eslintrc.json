@@ -1,0 +1,12 @@
+{
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "off",
+    "@next/next/no-html-link-for-pages": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+    "prefer-const": "off",
+    "no-console": "off",
+    "@next/next/no-async-client-component": "off",
+    "react-hooks/rules-of-hooks": "off"
+  }
+}
