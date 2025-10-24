@@ -4,65 +4,29 @@ import { useState } from 'react';
 import {
   Box,
   Grid,
+  Modal,
+  useTheme,
   Typography,
   Card,
   CardContent,
-  TextField,
   Button,
-  Select,
-  MenuItem,
-  FormControl,
-  Avatar,
-  IconButton,
-  Modal,
-  Tabs,
-  Tab,
-  Chip,
-  useTheme,
 } from '@mui/material';
 import {
-  PlayCircle,
-  Refresh,
-  ExpandMore,
   Close,
-  VolumeUp,
-  Speed,
-  SettingsVoice,
-  Add,
 } from '@mui/icons-material';
 import AudioPlayer from '@/components/AudioPlayer/AudioPlayer';
+import TextComposer from '@/components/TTS/TextComposer';
+import VoicePanel from '@/components/TTS/VoicePanel';
+import { Voice, VoiceScene } from '@/components/TTS/Types';
 
 export default function Home() {
   const theme = useTheme();
   const [selectedModel, setSelectedModel] = useState('Luna-2.6-Pro');
   const [text, setText] = useState('');
-  const [currentVoice, setCurrentVoice] = useState({
-    id: 'storyteller',
-    name: 'Storyteller',
-    description: 'Engaging & Warm',
-    avatar: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBqDTmRxce4NpOUiQPfRpPS1WJWQd12k6KhoO7sxELYV4W9plR-wwRd7QhbJ40kP6dLOdhJgLjC6EeBA8UVOtuqSds0CSebRQZROYruXs3kB89ovRGf_rrKI10amndrMpgNgJ1WYhxxOn87Hihxoc2FZmsRzpO-IvruKEJtOGE-Q-xq8fLX8hyIyLORo9-n39EXbUgEq7THgXM4hNDs4U5FRu1w98jR5Wu37qpEOIZloFkOWVBzR4wvVvHYDJ-DjaBwGdF15HU4F2DJ',
-  });
-  const [generatedAudioUrl, setGeneratedAudioUrl] = useState<string | undefined>('https://lunalab-res.oss-cn-hangzhou.aliyuncs.com/userAudio/female_m7SBz8yb.wav');
-  const [selectedModalVoice, setSelectedModalVoice] = useState<any>(null);
-  const [selectedSceneTab, setSelectedSceneTab] = useState<number>(0);
+  const [remainingGenerations] = useState(10); // 剩余生成次数
 
-  // 定义使用场景数据 - 12个场景，符合图片要求
-  const voiceScenes = [
-    { id: 0, name: '广告配音', icon: '📢🎬', description: '专业广告配音服务' },
-    { id: 1, name: '有声读物', icon: '📚📖', description: '有声书朗读' },
-    { id: 2, name: '客服', icon: '🎧📞', description: '客户服务语音' },
-    { id: 3, name: '游戏解说', icon: '🎮🎤', description: '游戏旁白解说' },
-    { id: 4, name: '影视解说', icon: '🎬📽️', description: '影视节目解说' },
-    { id: 5, name: '纪录片', icon: '📹🌍', description: '纪录片配音' },
-    { id: 6, name: '新闻播报', icon: '📰📺', description: '新闻主播播报' },
-    { id: 7, name: '教学课件', icon: '🎓📋', description: '教学内容配音' },
-    { id: 8, name: '地铁广播', icon: '🚇📢', description: '地铁到站广播' },
-    { id: 9, name: '公交到站广播', icon: '🚌📍', description: '公交车报站' },
-    { id: 10, name: '专题片', icon: '📊📽️', description: '专题片配音' },
-    { id: 11, name: '智能助手', icon: '🤖💬', description: 'AI智能助手语音' }
-  ];
-
-  const voiceOptions = [
+  // 语音数据
+  const voiceOptions: Voice[] = [
     {
       id: 'storyteller',
       name: 'Storyteller',
@@ -95,7 +59,28 @@ export default function Home() {
     },
   ];
 
-  const handleVoiceSelect = (voice: any) => {
+  const [currentVoice, setCurrentVoice] = useState<Voice>(voiceOptions[0]);
+  const [generatedAudioUrl, setGeneratedAudioUrl] = useState<string | undefined>('https://lunalab-res.oss-cn-hangzhou.aliyuncs.com/userAudio/female_m7SBz8yb.wav');
+  const [selectedModalVoice, setSelectedModalVoice] = useState<Voice | null>(null);
+  const [selectedSceneTab, setSelectedSceneTab] = useState<number>(0);
+
+  // 定义使用场景数据 - 12个场景，符合图片要求
+  const voiceScenes: VoiceScene[] = [
+    { id: 0, name: '广告配音', icon: '📢🎬', description: '专业广告配音服务' },
+    { id: 1, name: '有声读物', icon: '📚📖', description: '有声书朗读' },
+    { id: 2, name: '客服', icon: '🎧📞', description: '客户服务语音' },
+    { id: 3, name: '游戏解说', icon: '🎮🎤', description: '游戏旁白解说' },
+    { id: 4, name: '影视解说', icon: '🎬📽️', description: '影视节目解说' },
+    { id: 5, name: '纪录片', icon: '📹🌍', description: '纪录片配音' },
+    { id: 6, name: '新闻播报', icon: '📰📺', description: '新闻主播播报' },
+    { id: 7, name: '教学课件', icon: '🎓📋', description: '教学内容配音' },
+    { id: 8, name: '地铁广播', icon: '🚇📢', description: '地铁到站广播' },
+    { id: 9, name: '公交到站广播', icon: '🚌📍', description: '公交车报站' },
+    { id: 10, name: '专题片', icon: '📊📽️', description: '专题片配音' },
+    { id: 11, name: '智能助手', icon: '🤖💬', description: 'AI智能助手语音' }
+  ];
+
+  const handleVoiceSelect = (voice: Voice) => {
     setCurrentVoice(voice);
   };
 
@@ -108,398 +93,48 @@ export default function Home() {
     }
   };
 
+  const handleOpenSceneModal = () => {
+    setSelectedModalVoice(currentVoice);
+  };
+
   return (
     <Box sx={{
-      flexGrow: 1,
-      aspectRatio: '2/1', // 高1宽2的比例
+      flexGrow: 1, // 与Layout main容器完全一致的自适应行为
       maxWidth: '100vw',
-      overflow: 'hidden'
+      pb: 6, // 底部24px间距 (6 * 4px = 24px)
+      overflow: 'hidden',
+      display: 'flex',
+      flexDirection: 'column',
     }}>
-      <Grid container spacing={2} alignItems="flex-start">
-        {/* Text-to-Speech Section */}
+      {/* 主要内容区域 - Grid布局 */}
+      <Grid
+        container
+        spacing={{ xs: 2, sm: 2, md: 3 }}
+        alignItems="stretch"
+        sx={{
+          flexGrow: 1, // 关键：让Grid填充剩余空间
+          minHeight: 0, // 允许flex收缩
+        }}
+      >
+        {/* Text-to-Speech Section - 左侧8/12 */}
         <Grid item xs={12} lg={8}>
-          <Box sx={{
-            display: 'flex',
-            flexDirection: 'column',
-            gap: 3,
-            height: '100%'  // 让父容器填满可用高度
-          }}>
-            {/* Header */}
-            <Box sx={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center', height: '40px' }}>
-              <Typography variant="h4" sx={{ fontWeight: 'bold', color: 'textLight.main', display: 'flex', alignItems: 'center' }}>
-                Text-to-Speech
-              </Typography>
-            </Box>
-
-            {/* Text Input Card */}
-            <Card
-              sx={{
-                borderRadius: 3,
-                boxShadow: 'soft',
-                backgroundColor: 'surfaceLight.main',
-                flexGrow: 1,  // 让卡片填充剩余空间
-                display: 'flex',
-                flexDirection: 'column'
-              }}
-            >
-              <CardContent
-                sx={{
-                  p: 2,
-                  width: '100%',  // 修改为100%宽度，填满整个Card
-                  boxSizing: 'border-box',
-                  flexGrow: 1,        // 关键：让 CardContent 填充父容器剩余空间
-                  display: 'flex',
-                  flexDirection: 'column',
-                  minHeight: 0,      // 允许 flexbox 正确收缩
-                  overflowY: 'auto',
-                  '&::-webkit-scrollbar': {
-                    width: '6px',
-                  },
-                  '&::-webkit-scrollbar-track': {
-                    background: 'rgba(0, 0, 0, 0.1)',
-                    borderRadius: '3px',
-                  },
-                  '&::-webkit-scrollbar-thumb': {
-                    background: 'rgba(255, 199, 0, 0.3)',
-                    borderRadius: '3px',
-                    '&:hover': {
-                      background: 'rgba(255, 199, 0, 0.5)',
-                    },
-                  },
-                }}
-              >
-                <TextField
-                  multiline
-                  rows={6} // 进一步减少初始行数
-                  maxRows={10} // 更严格的最大行数限制
-                  fullWidth
-                  placeholder="Enter your text here to generate natural, expressive speech. Our AI brings your words to life!"
-                  value={text}
-                  onChange={(e) => setText(e.target.value)}
-                  variant="standard"
-                  sx={{
-                    flexGrow: 1,  // 让 TextField 填充 CardContent 剩余空间
-                    display: 'flex',
-                    flexDirection: 'column'
-                  }}
-                  InputProps={{
-                    disableUnderline: true,
-                    sx: {
-                      fontSize: '1rem',
-                      lineHeight: 1.4,
-                      flexGrow: 1,  // 让输入区域填充 TextField 空间
-                      display: 'flex',
-                      flexDirection: 'column',
-                      '&::placeholder': {
-                        color: 'subtleLight.main',
-                      },
-                    },
-                  }}
-                  inputProps={{
-                    style: {
-                      resize: 'none',
-                      overflowY: 'auto',
-                      boxSizing: 'border-box',
-                      flexGrow: 1,  // 让 textarea 输入区域填充可用空间
-                    }
-                  }}
-                />
-                <Box sx={{ display: 'flex', alignItems: 'center', gap: 2, mt: 2, px: 0.5 }}>
-                  <Typography variant="body2" sx={{ color: 'subtleLight.main' }}>
-                    {text.length} / 500 characters
-                  </Typography>
-                  <Button
-                    startIcon={<Refresh />}
-                    sx={{
-                      color: 'primary.main',
-                      fontWeight: 'medium',
-                      '&:hover': {
-                        color: 'primary.dark',
-                      },
-                    }}
-                  >
-                    Sample Sentences
-                  </Button>
-                </Box>
-              </CardContent>
-            </Card>
-
-            {/* Generate Button */}
-            <Box sx={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center', gap: 2 }}>
-              <Typography variant="body2" sx={{ color: 'subtleLight.main' }}>
-                10 generations remaining today
-              </Typography>
-              <Button
-                variant="contained"
-                onClick={handleGenerateAudio}
-                disabled={!text.trim()}
-                sx={(theme) => ({
-                  background: `linear-gradient(45deg, ${theme.palette.primary.main}, ${theme.palette.secondary.main})`,
-                  color: 'white',
-                  fontWeight: 'bold',
-                  py: 2,
-                  px: 4,
-                  borderRadius: 8,
-                  boxShadow: '0 4px 15px rgba(255, 199, 0, 0.3)',
-                  border: 'none',
-                  textTransform: 'none',
-                  fontSize: '16px',
-                  position: 'relative',
-                  overflow: 'hidden',
-                  '&:before': {
-                    content: '""',
-                    position: 'absolute',
-                    top: 0,
-                    left: '-100%',
-                    width: '100%',
-                    height: '100%',
-                    background: 'linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent)',
-                    transition: 'left 0.5s',
-                  },
-                  '&:hover': {
-                    background: 'linear-gradient(45deg, #B38B00, #FF6B35)',
-                    transform: 'scale(1.05) translateY(-2px)',
-                    boxShadow: '0 8px 25px rgba(255, 199, 0, 0.4)',
-                    '&:before': {
-                      left: '100%',
-                    },
-                  },
-                  '&:active': {
-                    transform: 'scale(1.02) translateY(-1px)',
-                    boxShadow: '0 4px 15px rgba(255, 199, 0, 0.3)',
-                  },
-                  '&:disabled': {
-                    background: 'linear-gradient(45deg, #9CA3AF, #6B7280)',
-                    color: '#E5E7EB',
-                    transform: 'none',
-                    boxShadow: 'none',
-                    '&:hover': {
-                      transform: 'none',
-                      boxShadow: 'none',
-                      '&:before': {
-                        left: '-100%',
-                      },
-                    },
-                  },
-                  transition: 'all 0.3s ease',
-                })}
-              >
-                Generate
-              </Button>
-            </Box>
-          </Box>
+          <TextComposer
+            text={text}
+            onTextChange={setText}
+            onGenerate={handleGenerateAudio}
+            canGenerate={text.trim().length > 0}
+            remainingGenerations={remainingGenerations}
+          />
         </Grid>
 
-        {/* Voice Selection Section */}
+        {/* Voice Selection Section - 右侧4/12 */}
         <Grid item xs={12} lg={4}>
-          <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3, width: '120%' }}>
-            <Typography
-            variant="h5"
-            sx={{
-              fontWeight: 'bold',
-              color: 'textLight.main',
-              height: '40px', // 匹配左侧Header的高度
-              display: 'flex',
-              alignItems: 'center'
-            }}
-          >
-            Voice Selection
-          </Typography>
-
-            <Card
-              sx={{
-                borderRadius: 3,
-                boxShadow: 'soft',
-                backgroundColor: 'surfaceLight.main',
-              }}
-            >
-              <CardContent sx={{ p: 3, display: 'flex', flexDirection: 'column', gap: 2 }}>
-                {/* Selected Voice - 固定显示的主选择卡片 */}
-                <Card
-                  onClick={() => {
-                    handleVoiceSelect(voiceOptions[0]);
-                    setSelectedModalVoice(voiceOptions[0]);
-                  }}
-                  sx={{
-                    position: 'relative',
-                    backgroundColor: 'transparent',
-                    borderRadius: 2,
-                    border: '1px solid',
-                    borderColor: currentVoice.id === 'storyteller' ? 'primary.main' : 'borderLight.main',
-                    cursor: 'pointer',
-                    transition: 'all 0.3s',
-                    minHeight: 150,
-                    overflow: 'hidden',
-                    boxShadow: currentVoice.id === 'storyteller'
-                      ? '0 0 0 2px rgba(255, 199, 0, 0.3), 0 4px 16px rgba(0, 0, 0, 0.12)'
-                      : '0 2px 8px rgba(0, 0, 0, 0.08)',
-                    '&:hover': {
-                      transform: 'scale(1.02)',
-                      boxShadow: '0 8px 24px rgba(0, 0, 0, 0.15)',
-                    },
-                  }}
-                >
-                  {/* 背景图片 - 充满整个Card */}
-                  <Box
-                    component="img"
-                    src={voiceOptions[0].avatar}
-                    alt={voiceOptions[0].name}
-                    sx={{
-                      position: 'absolute',
-                      top: 0,
-                      left: 0,
-                      width: '100%',
-                      height: '100%',
-                      objectFit: 'cover',
-                      zIndex: 1,
-                    }}
-                  />
-
-                  {/* 半透明遮罩层 */}
-                  <Box
-                    sx={{
-                      position: 'absolute',
-                      top: 0,
-                      left: 0,
-                      width: '100%',
-                      height: '100%',
-                      backgroundColor: currentVoice.id === 'storyteller'
-                        ? 'rgba(255, 199, 0, 0.2)'
-                        : 'rgba(0, 0, 0, 0.3)',
-                      zIndex: 2,
-                    }}
-                  />
-
-                  {/* 内容覆盖层 */}
-                  <Box
-                    sx={{
-                      position: 'relative',
-                      zIndex: 3,
-                      p: 3,
-                      display: 'flex',
-                      flexDirection: 'column',
-                      justifyContent: 'space-between',
-                      height: '100%',
-                      minHeight: 150,
-                    }}
-                  >
-                    {/* 顶部内容 */}
-                    <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
-                      <Typography
-                        variant="h6"
-                        sx={{
-                          fontWeight: 'semibold',
-                          color: 'white',
-                          borderRadius: 1,
-                          p: 1,
-                          textAlign: 'right'
-                        }}
-                      >
-                        {voiceOptions[0].name}
-                      </Typography>
-                      <Typography
-                        variant="body2"
-                        sx={{
-                          color: 'white',
-                          borderRadius: 1,
-                          p: 0.5,
-                          textAlign: 'right'
-                        }}
-                      >
-                        {voiceOptions[0].description}
-                      </Typography>
-                    </Box>
-
-                    {/* 底部箭头 */}
-                    <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
-                      <ExpandMore sx={{ color: 'white', fontSize: 30 }} />
-                    </Box>
-                  </Box>
-                </Card>
-
-                {/* Other Voices - 可滚动的头像列表 */}
-                <Box
-                  sx={{
-                    maxHeight: { xs: '180px', sm: '220px', md: '260px' },
-                    overflowY: 'auto',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    gap: 2,
-                    pr: 1, // 右侧padding为滚动条留空间
-                    '&::-webkit-scrollbar': {
-                      width: '6px',
-                    },
-                    '&::-webkit-scrollbar-track': {
-                      background: 'rgba(0, 0, 0, 0.1)',
-                      borderRadius: '3px',
-                    },
-                    '&::-webkit-scrollbar-thumb': {
-                      background: 'rgba(255, 199, 0, 0.3)',
-                      borderRadius: '3px',
-                      '&:hover': {
-                        background: 'rgba(255, 199, 0, 0.5)',
-                      },
-                    },
-                  }}
-                >
-                  {voiceOptions.slice(1).map((voice) => (
-                    <Box
-                      key={voice.id}
-                      onClick={() => handleVoiceSelect(voice)}
-                      sx={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'space-between',
-                        p: 2,
-                        borderRadius: 2,
-                        cursor: 'pointer',
-                        backgroundColor: currentVoice.id === voice.id ? 'rgba(255, 199, 0, 0.1)' : 'transparent',
-                        border: currentVoice.id === voice.id ? '1px solid' : 'none',
-                        borderColor: currentVoice.id === voice.id ? 'primary.main' : 'transparent',
-                        minHeight: 72,
-                        '&:hover': {
-                          backgroundColor: 'rgba(0, 0, 0, 0.04)',
-                        },
-                        transition: 'all 0.3s',
-                      }}
-                    >
-                      <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-                        <Avatar
-                          src={voice.avatar}
-                          sx={{
-                            width: 80,
-                            height: 80,
-                            // 恢复为圆形（默认50%）
-                            boxShadow: currentVoice.id === voice.id
-                              ? '0 0 0 2px #FFC700, 0 0 8px 3px rgba(255, 199, 0, 0.3)'
-                              : 'none',
-                          }}
-                        />
-                        <Box>
-                          <Typography variant="body1" sx={{ fontWeight: 'semibold', color: 'textLight.main' }}>
-                            {voice.name}
-                          </Typography>
-                          <Typography variant="caption" sx={{ color: 'subtleLight.main' }}>
-                            {voice.description}
-                          </Typography>
-                        </Box>
-                      </Box>
-                      <IconButton
-                        sx={{
-                          color: 'subtleLight.main',
-                          '&:hover': {
-                            color: 'primary.main',
-                          },
-                        }}
-                      >
-                        <PlayCircle sx={{ fontSize: 32 }} />
-                      </IconButton>
-                    </Box>
-                  ))}
-                </Box>
-              </CardContent>
-            </Card>
-          </Box>
+          <VoicePanel
+            selectedVoice={currentVoice}
+            voices={voiceOptions}
+            onVoiceSelect={handleVoiceSelect}
+            onOpenSceneModal={handleOpenSceneModal}
+          />
         </Grid>
       </Grid>
 
@@ -544,7 +179,7 @@ export default function Home() {
               <Typography variant="h5" sx={{ flexGrow: 1, textAlign: 'left', pl: 1 }}>
                 场景选择
               </Typography>
-              <IconButton
+              <Button
                 onClick={() => setSelectedModalVoice(null)}
                 sx={{
                   color: 'text.primary',
@@ -554,7 +189,7 @@ export default function Home() {
                 }}
               >
                 <Close />
-              </IconButton>
+              </Button>
             </Box>
           </Box>
 
@@ -641,7 +276,7 @@ export default function Home() {
               ))}
             </Box>
 
-            </Box>
+          </Box>
 
           {/* Action Buttons */}
           <Box sx={{ p: 9, borderTop: 'none', backgroundColor: 'grey.50', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -649,7 +284,9 @@ export default function Home() {
               variant="contained"
               onClick={() => {
                 setSelectedModalVoice(null);
-                setCurrentVoice(selectedModalVoice);
+                if (selectedModalVoice) {
+                  setCurrentVoice(selectedModalVoice);
+                }
               }}
               sx={(theme) => ({
                 background: `linear-gradient(45deg, ${theme.palette.primary.main}, ${theme.palette.secondary.main})`,

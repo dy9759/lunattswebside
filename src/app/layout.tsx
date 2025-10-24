@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter';
-import { ThemeProvider } from '@mui/material/styles';
-import { theme } from '@/theme/theme';
+import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter";
+import { ThemeProvider } from "@mui/material/styles";
+import { theme } from "@/theme/theme";
 import Layout from "@/components/Layout/Layout";
+import Script from "next/script";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -42,6 +43,22 @@ export default function RootLayout({
             <Layout>{children}</Layout>
           </ThemeProvider>
         </AppRouterCacheProvider>
+
+        {/* WUUNU SNIPPET - DON'T CHANGE THIS (START) */}
+        {process.env.NODE_ENV !== "production" && (
+          <>
+            <Script id="wuunu-ws" strategy="afterInteractive">
+              {`window.__WUUNU_WS__ = "http://127.0.0.1:58798/";`}
+            </Script>
+            <Script
+              id="wuunu-widget"
+              src="https://cdn.jsdelivr.net/npm/@wuunu/widget@0.1?cacheParam=56"
+              strategy="afterInteractive"
+              crossOrigin="anonymous"
+            />
+          </>
+        )}
+        {/* WUUNU SNIPPET - DON'T CHANGE THIS (END) */}
       </body>
     </html>
   );

@@ -77,9 +77,9 @@ const Header = () => {
             />
             <Typography
               variant="h6"
+              className="typeless-icon-text"
               sx={{
                 fontWeight: 800,
-                color: 'white',
                 letterSpacing: '-0.025em',
                 fontSize: { xs: '1rem', sm: '1.1rem', md: '1.3rem' },
                 background: `linear-gradient(45deg, ${theme.palette.primary.main}, ${theme.palette.secondary.main})`,
@@ -89,7 +89,7 @@ const Header = () => {
                 display: { xs: 'none', sm: 'block' }
               }}
             >
-              LUNA TTSAPI
+              Luna TTS
             </Typography>
           </Box>
 
