@@ -37,17 +37,34 @@
   --color-border-dark: #27272A;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* 强制设置浅灰色背景 */
+html {
+  background-color: #F9F9F9 !important;
 }
 
 body {
-  background: var(--background);
+  background-color: #F9F9F9 !important;
+  background: #F9F9F9 !important;
   color: var(--foreground);
   font-family: 'Inter', sans-serif;
+}
+
+/* 覆盖任何可能的暗色模式设置 */
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: #F9F9F9 !important;
+  }
+
+  body {
+    background-color: #F9F9F9 !important;
+    background: #F9F9F9 !important;
+    color: var(--foreground);
+  }
+}
+
+/* 确保主容器也使用正确的背景色 */
+.min-h-screen {
+  background-color: #F9F9F9 !important;
 }
 
 .material-symbols-outlined {

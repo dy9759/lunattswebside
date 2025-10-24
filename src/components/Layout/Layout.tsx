@@ -16,7 +16,7 @@ const Layout = ({ children }: LayoutProps) => {
     <div className="flex flex-col min-h-screen bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark antialiased">
       <Header />
 
-      <main className="flex-grow container mx-auto p-4 md:p-8">
+      <main className="flex-grow container mx-auto p-2 md:p-4 pb-24 md:pb-24">
         {children}
       </main>
     </div>

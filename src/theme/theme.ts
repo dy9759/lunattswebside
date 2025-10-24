@@ -78,6 +78,12 @@ export const theme = createTheme({
       dark: '#B38B00',
       contrastText: '#000000',
     },
+    secondary: {
+      main: '#FF6B35',
+      light: '#FF8C42',
+      dark: '#E55100',
+      contrastText: '#FFFFFF',
+    },
     backgroundLight: {
       main: '#F9F9F9',
     },
@@ -182,6 +188,12 @@ export const darkTheme = createTheme({
       light: '#FFEC8A',
       dark: '#B38B00',
       contrastText: '#000000',
+    },
+    secondary: {
+      main: '#FF6B35',
+      light: '#FF8C42',
+      dark: '#E55100',
+      contrastText: '#FFFFFF',
     },
     background: {
       default: '#121212',

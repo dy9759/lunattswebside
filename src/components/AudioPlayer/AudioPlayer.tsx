@@ -108,9 +108,9 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({
         right: 0,
         backgroundColor: 'rgba(255, 255, 255, 0.9)',
         backdropFilter: 'blur(16px)',
-        borderTop: 1,
+        borderTop: 0,
         borderColor: 'borderLight.main',
-        boxShadow: 3,
+        boxShadow: '0 0.8px rgba(0, 0, 0, 0.1)',
         p: 2,
         zIndex: 1000,
       }}

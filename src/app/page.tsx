@@ -18,6 +18,7 @@ import {
   Tabs,
   Tab,
   Chip,
+  useTheme,
 } from '@mui/material';
 import {
   PlayCircle,
@@ -32,6 +33,7 @@ import {
 import AudioPlayer from '@/components/AudioPlayer/AudioPlayer';
 
 export default function Home() {
+  const theme = useTheme();
   const [selectedModel, setSelectedModel] = useState('Luna-2.6-Pro');
   const [text, setText] = useState('');
   const [currentVoice, setCurrentVoice] = useState({
@@ -107,14 +109,24 @@ export default function Home() {
   };
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <Grid container spacing={4} alignItems="flex-start">
+    <Box sx={{
+      flexGrow: 1,
+      aspectRatio: '2/1', // 高1宽2的比例
+      maxWidth: '100vw',
+      overflow: 'hidden'
+    }}>
+      <Grid container spacing={2} alignItems="flex-start">
         {/* Text-to-Speech Section */}
         <Grid item xs={12} lg={8}>
-          <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
+          <Box sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            gap: 3,
+            height: '100%'  // 让父容器填满可用高度
+          }}>
             {/* Header */}
-            <Box sx={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }}>
-              <Typography variant="h4" sx={{ fontWeight: 'bold', color: 'textLight.main' }}>
+            <Box sx={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center', height: '40px' }}>
+              <Typography variant="h4" sx={{ fontWeight: 'bold', color: 'textLight.main', display: 'flex', alignItems: 'center' }}>
                 Text-to-Speech
               </Typography>
             </Box>
@@ -125,25 +137,71 @@ export default function Home() {
                 borderRadius: 3,
                 boxShadow: 'soft',
                 backgroundColor: 'surfaceLight.main',
+                flexGrow: 1,  // 让卡片填充剩余空间
+                display: 'flex',
+                flexDirection: 'column'
               }}
             >
-              <CardContent sx={{ p: 4 }}>
+              <CardContent
+                sx={{
+                  p: 2,
+                  width: '100%',  // 修改为100%宽度，填满整个Card
+                  boxSizing: 'border-box',
+                  flexGrow: 1,        // 关键：让 CardContent 填充父容器剩余空间
+                  display: 'flex',
+                  flexDirection: 'column',
+                  minHeight: 0,      // 允许 flexbox 正确收缩
+                  overflowY: 'auto',
+                  '&::-webkit-scrollbar': {
+                    width: '6px',
+                  },
+                  '&::-webkit-scrollbar-track': {
+                    background: 'rgba(0, 0, 0, 0.1)',
+                    borderRadius: '3px',
+                  },
+                  '&::-webkit-scrollbar-thumb': {
+                    background: 'rgba(255, 199, 0, 0.3)',
+                    borderRadius: '3px',
+                    '&:hover': {
+                      background: 'rgba(255, 199, 0, 0.5)',
+                    },
+                  },
+                }}
+              >
                 <TextField
                   multiline
-                  rows={15}
+                  rows={6} // 进一步减少初始行数
+                  maxRows={10} // 更严格的最大行数限制
                   fullWidth
                   placeholder="Enter your text here to generate natural, expressive speech. Our AI brings your words to life!"
                   value={text}
                   onChange={(e) => setText(e.target.value)}
                   variant="standard"
+                  sx={{
+                    flexGrow: 1,  // 让 TextField 填充 CardContent 剩余空间
+                    display: 'flex',
+                    flexDirection: 'column'
+                  }}
                   InputProps={{
                     disableUnderline: true,
                     sx: {
                       fontSize: '1rem',
+                      lineHeight: 1.4,
+                      flexGrow: 1,  // 让输入区域填充 TextField 空间
+                      display: 'flex',
+                      flexDirection: 'column',
                       '&::placeholder': {
                         color: 'subtleLight.main',
                       },
                     },
+                  }}
+                  inputProps={{
+                    style: {
+                      resize: 'none',
+                      overflowY: 'auto',
+                      boxSizing: 'border-box',
+                      flexGrow: 1,  // 让 textarea 输入区域填充可用空间
+                    }
                   }}
                 />
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: 2, mt: 2, px: 0.5 }}>
@@ -175,24 +233,56 @@ export default function Home() {
                 variant="contained"
                 onClick={handleGenerateAudio}
                 disabled={!text.trim()}
-                sx={{
-                  backgroundColor: 'primary.main',
-                  color: 'black',
-                  fontWeight: 'semibold',
+                sx={(theme) => ({
+                  background: `linear-gradient(45deg, ${theme.palette.primary.main}, ${theme.palette.secondary.main})`,
+                  color: 'white',
+                  fontWeight: 'bold',
                   py: 2,
                   px: 4,
                   borderRadius: 8,
-                  boxShadow: 2,
+                  boxShadow: '0 4px 15px rgba(255, 199, 0, 0.3)',
+                  border: 'none',
+                  textTransform: 'none',
+                  fontSize: '16px',
+                  position: 'relative',
+                  overflow: 'hidden',
+                  '&:before': {
+                    content: '""',
+                    position: 'absolute',
+                    top: 0,
+                    left: '-100%',
+                    width: '100%',
+                    height: '100%',
+                    background: 'linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent)',
+                    transition: 'left 0.5s',
+                  },
                   '&:hover': {
-                    backgroundColor: 'primary.dark',
-                    transform: 'scale(1.05)',
+                    background: 'linear-gradient(45deg, #B38B00, #FF6B35)',
+                    transform: 'scale(1.05) translateY(-2px)',
+                    boxShadow: '0 8px 25px rgba(255, 199, 0, 0.4)',
+                    '&:before': {
+                      left: '100%',
+                    },
+                  },
+                  '&:active': {
+                    transform: 'scale(1.02) translateY(-1px)',
+                    boxShadow: '0 4px 15px rgba(255, 199, 0, 0.3)',
                   },
                   '&:disabled': {
-                    backgroundColor: 'grey.300',
-                    color: 'grey.500',
+                    background: 'linear-gradient(45deg, #9CA3AF, #6B7280)',
+                    color: '#E5E7EB',
+                    transform: 'none',
+                    boxShadow: 'none',
+                    '&:hover': {
+                      transform: 'none',
+                      boxShadow: 'none',
+                      '&:before': {
+                        left: '-100%',
+                      },
+                    },
                   },
-                  transition: 'all 0.3s',
-                }}
+                  transition: 'all 0.3s ease',
+                })}
               >
                 Generate
               </Button>
@@ -202,7 +292,7 @@ export default function Home() {
 
         {/* Voice Selection Section */}
         <Grid item xs={12} lg={4}>
-          <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
+          <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3, width: '120%' }}>
             <Typography
             variant="h5"
             sx={{
@@ -224,7 +314,7 @@ export default function Home() {
               }}
             >
               <CardContent sx={{ p: 3, display: 'flex', flexDirection: 'column', gap: 2 }}>
-                {/* Selected Voice */}
+                {/* Selected Voice - 固定显示的主选择卡片 */}
                 <Card
                   onClick={() => {
                     handleVoiceSelect(voiceOptions[0]);
@@ -300,11 +390,9 @@ export default function Home() {
                         sx={{
                           fontWeight: 'semibold',
                           color: 'white',
-                          textShadow: '0 2px 4px rgba(0, 0, 0, 0.8)',
-                          backgroundColor: 'rgba(0, 0, 0, 0.5)',
                           borderRadius: 1,
                           p: 1,
-                          textAlign: 'center'
+                          textAlign: 'right'
                         }}
                       >
                         {voiceOptions[0].name}
@@ -313,11 +401,9 @@ export default function Home() {
                         variant="body2"
                         sx={{
                           color: 'white',
-                          textShadow: '0 1px 2px rgba(0, 0, 0, 0.8)',
-                          backgroundColor: 'rgba(0, 0, 0, 0.5)',
                           borderRadius: 1,
                           p: 0.5,
-                          textAlign: 'center'
+                          textAlign: 'right'
                         }}
                       >
                         {voiceOptions[0].description}
@@ -331,61 +417,86 @@ export default function Home() {
                   </Box>
                 </Card>
 
-                {/* Other Voices */}
-                {voiceOptions.slice(1).map((voice) => (
-                  <Box
-                    key={voice.id}
-                    onClick={() => handleVoiceSelect(voice)}
-                    sx={{
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'space-between',
-                      p: 2,
-                      borderRadius: 2,
-                      cursor: 'pointer',
-                      backgroundColor: currentVoice.id === voice.id ? 'rgba(255, 199, 0, 0.1)' : 'transparent',
-                      border: currentVoice.id === voice.id ? '1px solid' : 'none',
-                      borderColor: currentVoice.id === voice.id ? 'primary.main' : 'transparent',
-                      minHeight: 72,
+                {/* Other Voices - 可滚动的头像列表 */}
+                <Box
+                  sx={{
+                    maxHeight: { xs: '180px', sm: '220px', md: '260px' },
+                    overflowY: 'auto',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: 2,
+                    pr: 1, // 右侧padding为滚动条留空间
+                    '&::-webkit-scrollbar': {
+                      width: '6px',
+                    },
+                    '&::-webkit-scrollbar-track': {
+                      background: 'rgba(0, 0, 0, 0.1)',
+                      borderRadius: '3px',
+                    },
+                    '&::-webkit-scrollbar-thumb': {
+                      background: 'rgba(255, 199, 0, 0.3)',
+                      borderRadius: '3px',
                       '&:hover': {
-                        backgroundColor: 'rgba(0, 0, 0, 0.04)',
+                        background: 'rgba(255, 199, 0, 0.5)',
                       },
-                      transition: 'all 0.3s',
-                    }}
-                  >
-                    <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-                      <Avatar
-                        src={voice.avatar}
-                        sx={{
-                          width: 48,
-                          height: 48,
-                          // 恢复为圆形（默认50%）
-                          boxShadow: currentVoice.id === voice.id
-                            ? '0 0 0 2px #FFC700, 0 0 8px 3px rgba(255, 199, 0, 0.3)'
-                            : 'none',
-                        }}
-                      />
-                      <Box>
-                        <Typography variant="body1" sx={{ fontWeight: 'semibold', color: 'textLight.main' }}>
-                          {voice.name}
-                        </Typography>
-                        <Typography variant="caption" sx={{ color: 'subtleLight.main' }}>
-                          {voice.description}
-                        </Typography>
-                      </Box>
-                    </Box>
-                    <IconButton
+                    },
+                  }}
+                >
+                  {voiceOptions.slice(1).map((voice) => (
+                    <Box
+                      key={voice.id}
+                      onClick={() => handleVoiceSelect(voice)}
                       sx={{
-                        color: 'subtleLight.main',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'space-between',
+                        p: 2,
+                        borderRadius: 2,
+                        cursor: 'pointer',
+                        backgroundColor: currentVoice.id === voice.id ? 'rgba(255, 199, 0, 0.1)' : 'transparent',
+                        border: currentVoice.id === voice.id ? '1px solid' : 'none',
+                        borderColor: currentVoice.id === voice.id ? 'primary.main' : 'transparent',
+                        minHeight: 72,
                         '&:hover': {
-                          color: 'primary.main',
+                          backgroundColor: 'rgba(0, 0, 0, 0.04)',
                         },
+                        transition: 'all 0.3s',
                       }}
                     >
-                      <PlayCircle sx={{ fontSize: 32 }} />
-                    </IconButton>
-                  </Box>
-                ))}
+                      <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
+                        <Avatar
+                          src={voice.avatar}
+                          sx={{
+                            width: 80,
+                            height: 80,
+                            // 恢复为圆形（默认50%）
+                            boxShadow: currentVoice.id === voice.id
+                              ? '0 0 0 2px #FFC700, 0 0 8px 3px rgba(255, 199, 0, 0.3)'
+                              : 'none',
+                          }}
+                        />
+                        <Box>
+                          <Typography variant="body1" sx={{ fontWeight: 'semibold', color: 'textLight.main' }}>
+                            {voice.name}
+                          </Typography>
+                          <Typography variant="caption" sx={{ color: 'subtleLight.main' }}>
+                            {voice.description}
+                          </Typography>
+                        </Box>
+                      </Box>
+                      <IconButton
+                        sx={{
+                          color: 'subtleLight.main',
+                          '&:hover': {
+                            color: 'primary.main',
+                          },
+                        }}
+                      >
+                        <PlayCircle sx={{ fontSize: 32 }} />
+                      </IconButton>
+                    </Box>
+                  ))}
+                </Box>
               </CardContent>
             </Card>
           </Box>
@@ -540,19 +651,43 @@ export default function Home() {
                 setSelectedModalVoice(null);
                 setCurrentVoice(selectedModalVoice);
               }}
-              sx={{
-                backgroundColor: 'primary.main',
-                color: 'background.paper',
+              sx={(theme) => ({
+                background: `linear-gradient(45deg, ${theme.palette.primary.main}, ${theme.palette.secondary.main})`,
+                color: 'white',
                 borderRadius: '24px',
                 px: 5,
                 py: 1.75,
                 fontSize: '16px',
                 fontWeight: 'bold',
                 textTransform: 'none',
-                '&:hover': {
-                  backgroundColor: 'primary.dark',
+                boxShadow: '0 4px 15px rgba(255, 199, 0, 0.3)',
+                border: 'none',
+                position: 'relative',
+                overflow: 'hidden',
+                '&:before': {
+                  content: '""',
+                  position: 'absolute',
+                  top: 0,
+                  left: '-100%',
+                  width: '100%',
+                  height: '100%',
+                  background: 'linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent)',
+                  transition: 'left 0.5s',
                 },
-              }}
+                '&:hover': {
+                  background: 'linear-gradient(45deg, #B38B00, #FF6B35)',
+                  transform: 'scale(1.05) translateY(-2px)',
+                  boxShadow: '0 8px 25px rgba(255, 199, 0, 0.4)',
+                  '&:before': {
+                    left: '100%',
+                  },
+                },
+                '&:active': {
+                  transform: 'scale(1.02) translateY(-1px)',
+                  boxShadow: '0 4px 15px rgba(255, 199, 0, 0.3)',
+                },
+                transition: 'all 0.3s ease',
+              })}
             >
               确认
             </Button>
