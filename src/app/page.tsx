@@ -99,10 +99,9 @@ export default function Home() {
 
   return (
     <Box sx={{
-      flexGrow: 1, // 与Layout main容器完全一致的自适应行为
+      height: '100%', // 填充父容器(Layout main)的完整高度
       maxWidth: '100vw',
-      pb: 6, // 底部24px间距 (6 * 4px = 24px)
-      overflow: 'hidden',
+      overflow: 'hidden', // 防止内容溢出
       display: 'flex',
       flexDirection: 'column',
     }}>
@@ -112,8 +111,10 @@ export default function Home() {
         spacing={{ xs: 2, sm: 2, md: 3 }}
         alignItems="stretch"
         sx={{
-          flexGrow: 1, // 关键：让Grid填充剩余空间
+          flexGrow: 1, // 让Grid填充剩余空间
           minHeight: 0, // 允许flex收缩
+          maxHeight: '100%', // 限制Grid最大高度，防止溢出
+          overflow: 'hidden', // 防止Grid溢出
         }}
       >
         {/* Text-to-Speech Section - 左侧8/12 */}
@@ -128,7 +129,15 @@ export default function Home() {
         </Grid>
 
         {/* Voice Selection Section - 右侧4/12 */}
-        <Grid item xs={12} lg={4}>
+        <Grid
+          item
+          xs={12}
+          lg={4}
+          sx={{
+            maxHeight: '100%', // 限制Grid item最大高度
+            overflow: 'hidden', // 防止溢出
+          }}
+        >
           <VoicePanel
             selectedVoice={currentVoice}
             voices={voiceOptions}

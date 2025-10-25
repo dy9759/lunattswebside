@@ -32,27 +32,12 @@ export default function TextInputCard({ text, onTextChange }: TextInputCardProps
           display: 'flex',
           flexDirection: 'column',
           minHeight: 0, // 允许 flexbox 正确收缩
-          overflowY: 'auto',
-          '&::-webkit-scrollbar': {
-            width: '6px',
-          },
-          '&::-webkit-scrollbar-track': {
-            background: 'rgba(0, 0, 0, 0.1)',
-            borderRadius: '3px',
-          },
-          '&::-webkit-scrollbar-thumb': {
-            background: 'rgba(255, 199, 0, 0.3)',
-            borderRadius: '3px',
-            '&:hover': {
-              background: 'rgba(255, 199, 0, 0.5)',
-            },
-          },
         }}
       >
         <TextField
           multiline
-          rows={6}
-          maxRows={10}
+          rows={4} // 设置合理的最小行数
+          maxRows={12} // 设置最大行数限制
           fullWidth
           placeholder="Enter your text here to generate natural, expressive speech. Our AI brings your words to life!"
           value={text}
@@ -62,7 +47,8 @@ export default function TextInputCard({ text, onTextChange }: TextInputCardProps
             flexGrow: 1, // 让 TextField 填充 CardContent 剩余空间
             display: 'flex',
             flexDirection: 'column',
-            minHeight: 0, // 允许收缩
+            // 限制TextField最大高度
+            maxHeight: '300px', // 设置最大高度限制
           }}
           InputProps={{
             disableUnderline: true,
@@ -72,20 +58,29 @@ export default function TextInputCard({ text, onTextChange }: TextInputCardProps
               flexGrow: 1, // 让输入区域填充 TextField 空间
               display: 'flex',
               flexDirection: 'column',
-              minHeight: 0, // 允许收缩
-              '&::placeholder': {
-                color: 'subtleLight.main',
+              // textarea关键修复
+              '& textarea': {
+                resize: 'none',
+                overflowY: 'auto', // 允许滚动
+                maxHeight: '280px', // 限制textarea最大高度
+                boxSizing: 'border-box',
+                // 美观的滚动条样式
+                '&::-webkit-scrollbar': {
+                  width: '6px',
+                },
+                '&::-webkit-scrollbar-track': {
+                  background: 'rgba(0, 0, 0, 0.05)',
+                  borderRadius: '3px',
+                },
+                '&::-webkit-scrollbar-thumb': {
+                  background: 'rgba(255, 199, 0, 0.3)',
+                  borderRadius: '3px',
+                  '&:hover': {
+                    background: 'rgba(255, 199, 0, 0.5)',
+                  },
+                },
               },
             },
-          }}
-          inputProps={{
-            style: {
-              resize: 'none',
-              overflowY: 'auto',
-              boxSizing: 'border-box',
-              flexGrow: 1, // 让 textarea 输入区域填充可用空间
-              minHeight: 0, // 允许收缩
-            }
           }}
         />
 

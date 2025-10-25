@@ -1,6 +1,6 @@
 'use client';
 
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, Card, CardContent } from '@mui/material';
 import MainVoiceDisplay from './MainVoiceDisplay';
 import VoiceList from './VoiceList';
 import { VoicePanelProps } from '../Types';
@@ -42,19 +42,43 @@ export default function VoicePanel({
         Voice Selection
       </Typography>
 
-      {/* 主语音卡片 - 固定高度 */}
-      <MainVoiceDisplay
-        voice={voices[0]}
-        isSelected={selectedVoice.id === voices[0].id}
-        onClick={handleMainVoiceClick}
-      />
+      {/* 统一的底部容器 - 包装除标题外的所有内容 */}
+      <Card
+        sx={{
+          borderRadius: 3,
+          boxShadow: 'soft',
+          backgroundColor: 'surfaceLight.main',
+          flexGrow: 1, // 让Card填充剩余空间
+          display: 'flex',
+          flexDirection: 'column',
+          minHeight: 0, // 允许flex收缩
+        }}
+      >
+        <CardContent
+          sx={{
+            p: 3,
+            display: 'flex',
+            flexDirection: 'column',
+            gap: 2,
+            flexGrow: 1, // CardContent填充Card剩余空间
+            minHeight: 0, // 允许flex收缩
+          }}
+        >
+          {/* 主语音卡片 - 固定高度 */}
+          <MainVoiceDisplay
+            voice={voices[0]}
+            isSelected={selectedVoice.id === voices[0].id}
+            onClick={handleMainVoiceClick}
+          />
 
-      {/* 语音列表 - 自适应剩余高度 */}
-      <VoiceList
-        voices={voices.slice(1)} // 排除第一个主语音
-        selectedVoiceId={selectedVoice.id}
-        onVoiceSelect={onVoiceSelect}
-      />
+          {/* 语音列表 - 自适应剩余高度 */}
+          <VoiceList
+            voices={voices.slice(1)} // 排除第一个主语音
+            selectedVoiceId={selectedVoice.id}
+            onVoiceSelect={onVoiceSelect}
+          />
+        </CardContent>
+      </Card>
     </Box>
   );
 }

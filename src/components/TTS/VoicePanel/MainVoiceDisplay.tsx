@@ -23,8 +23,9 @@ export default function MainVoiceDisplay({ voice, isSelected, onClick }: MainVoi
         cursor: 'pointer',
         transition: 'all 0.3s',
         minHeight: 150, // 固定最小高度
-        height: 200, // 固定高度，防止被压缩
+        height: 180, // 减少固定高度，为VoiceList留出更多空间
         overflow: 'hidden',
+        flexShrink: 0, // 确保不会被压缩
         boxShadow: isSelected
           ? '0 0 0 2px rgba(255, 199, 0, 0.3), 0 4px 16px rgba(0, 0, 0, 0.12)'
           : '0 2px 8px rgba(0, 0, 0, 0.08)',
