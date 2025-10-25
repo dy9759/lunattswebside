@@ -86,6 +86,7 @@ body {
 }
 
 .typeless-icon-text {
-    font-size: 3px !important;
-    line-height: 0 !important;
+    /* 移除导致文字不可见的样式 */
+    /* font-size: 3px !important; */
+    /* line-height: 0 !important; */
 }

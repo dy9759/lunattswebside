@@ -86,7 +86,7 @@ const Header = () => {
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
                 backgroundClip: 'text',
-                display: { xs: 'none', sm: 'block' }
+                display: 'block'
               }}
             >
               LunaTTS
