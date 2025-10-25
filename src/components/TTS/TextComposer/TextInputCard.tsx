@@ -88,8 +88,8 @@ export default function TextInputCard({ text, onTextChange }: TextInputCardProps
         <Box sx={{
           display: 'flex',
           alignItems: 'center',
-          justifyContent: 'space-between',
-          gap: 2,
+          justifyContent: 'flex-start', // 改为左对齐
+          gap: 2, // 元素之间的间距
           mt: 2,
           px: 0.5,
           flexShrink: 0, // 防止被压缩

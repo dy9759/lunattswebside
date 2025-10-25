@@ -89,7 +89,7 @@ const Header = () => {
                 display: { xs: 'none', sm: 'block' }
               }}
             >
-              Luna TTS
+              LunaTTS
             </Typography>
           </Box>
 
