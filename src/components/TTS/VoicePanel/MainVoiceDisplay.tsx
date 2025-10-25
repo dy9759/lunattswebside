@@ -33,7 +33,6 @@ export default function MainVoiceDisplay({ voice, isSelected, onClick }: MainVoi
           transform: 'scale(1.02)',
           boxShadow: '0 8px 24px rgba(0, 0, 0, 0.15)',
         },
-        flexShrink: 0, // 关键：防止被flex压缩
       }}
     >
       {/* 背景图片 - 充满整个Card */}
