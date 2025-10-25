@@ -1,0 +1,34 @@
+{
+  "timestamp": "2025-10-25T15:42:28.795Z",
+  "summary": {
+    "totalElements": 0,
+    "visibleElements": 0,
+    "headerElements": 0,
+    "gradientElements": 0,
+    "overallSuccess": false
+  },
+  "elements": [],
+  "positionAnalysis": [],
+  "successCriteria": [
+    {
+      "condition": false,
+      "description": "找到 LunaTTS 文字",
+      "passed": false
+    },
+    {
+      "condition": false,
+      "description": "文字可见",
+      "passed": false
+    },
+    {
+      "condition": false,
+      "description": "文字在 Header 中",
+      "passed": false
+    },
+    {
+      "condition": false,
+      "description": "文字有渐变效果",
+      "passed": false
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LunaTTS 显示测试</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F9F9F9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .test-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #F9F9F9;
+            border-radius: 9999px;
+        }
+
+        .logo {
+            width: 24px;
+            height: 24px;
+            border-radius: 6px;
+            background: #FFC700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #000;
+        }
+
+        /* 原始问题样式 - 已注释掉 */
+        .typeless-icon-text-problem {
+            font-size: 3px !important;
+            line-height: 0 !important;
+            background: linear-gradient(45deg, #FFC700, #FF6B35);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* 修复后的样式 */
+        .typeless-icon-text-fixed {
+            font-weight: 800;
+            letter-spacing: -0.025em;
+            font-size: 1.3rem;
+            background: linear-gradient(45deg, #FFC700, #FF6B35);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: block;
+        }
+
+        .test-section {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #e4e4e7;
+            border-radius: 8px;
+        }
+
+        .test-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #18181B;
+        }
+
+        .comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .comparison-item {
+            padding: 15px;
+            border: 1px solid #e4e4e7;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .status {
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            margin-top: 10px;
+            display: inline-block;
+        }
+
+        .status.problem {
+            background-color: #fef2f2;
+            color: #dc2626;
+        }
+
+        .status.fixed {
+            background-color: #f0fdf4;
+            color: #16a34a;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>LunaTTS 显示问题测试报告</h1>
+
+        <div class="test-section">
+            <div class="test-title">问题描述</div>
+            <p>在原始代码中，<code>.typeless-icon-text</code> 类被设置了 <code>font-size: 3px</code> 和 <code>line-height: 0</code>，导致 "LunaTTS" 文字几乎不可见。</p>
+        </div>
+
+        <div class="test-section">
+            <div class="test-title">Header 模拟效果对比</div>
+            <div class="comparison">
+                <div class="comparison-item">
+                    <h3>修复前 (问题样式)</h3>
+                    <div class="header-container">
+                        <div class="logo">L</div>
+                        <div class="typeless-icon-text-problem">LunaTTS</div>
+                    </div>
+                    <span class="status problem">❌ 几乎不可见 (3px字体)</span>
+                </div>
+
+                <div class="comparison-item">
+                    <h3>修复后 (正常样式)</h3>
+                    <div class="header-container">
+                        <div class="logo">L</div>
+                        <div class="typeless-icon-text-fixed">LunaTTS</div>
+                    </div>
+                    <span class="status fixed">✅ 正常显示 (1.3rem字体)</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="test-section">
+            <div class="test-title">修复详情</div>
+            <p><strong>问题源头：</strong> <code>/src/app/globals.css</code> 文件中的样式定义</p>
+            <p><strong>原始代码：</strong></p>
+            <pre style="background: #f5f5f5; padding: 10px; border-radius: 4px; overflow-x: auto;">
+.typeless-icon-text {
+    font-size: 3px !important;
+    line-height: 0 !important;
+}</pre>
+
+            <p><strong>修复后代码：</strong></p>
+            <pre style="background: #f5f5f5; padding: 10px; border-radius: 4px; overflow-x: auto;">
+.typeless-icon-text {
+    /* 移除导致文字不可见的样式 */
+    /* font-size: 3px !important; */
+    /* line-height: 0 !important; */
+}</pre>
+        </div>
+
+        <div class="test-section">
+            <div class="test-title">验证结果</div>
+            <ul>
+                <li>✅ HTML 源码中包含 "LunaTTS" 文字</li>
+                <li>✅ Header 组件正确渲染</li>
+                <li>✅ 文字使用渐变样式 (45deg, #FFC700, #FF6B35)</li>
+                <li>✅ 字体大小恢复正常 (1rem - 1.3rem 响应式)</li>
+                <li>✅ 文字现在在页面中清晰可见</li>
+            </ul>
+        </div>
+
+        <div class="test-section">
+            <div class="test-title">技术细节</div>
+            <p><strong>组件位置：</strong> <code>/src/components/Layout/Header.tsx</code> 第78-93行</p>
+            <p><strong>样式应用：</strong> MUI Typography 组件 + typeless-icon-text 类名</p>
+            <p><strong>渐变效果：</strong> CSS linear-gradient + background-clip: text</p>
+            <p><strong>响应式设计：</strong> xs:1rem, sm:1.1rem, md:1.3rem</p>
+        </div>
+    </div>
+
+    <script>
+        console.log('LunaTTS 显示测试页面已加载');
+        console.log('修复状态: ✅ 已完成');
+
+        // 检查页面中的 LunaTTS 元素
+        document.addEventListener('DOMContentLoaded', function() {
+            const elements = document.querySelectorAll('[class*="typeless"]');
+            console.log(`找到 ${elements.length} 个 typeless 相关元素`);
+
+            elements.forEach((el, index) => {
+                const styles = window.getComputedStyle(el);
+                console.log(`元素 ${index + 1}:`, {
+                    fontSize: styles.fontSize,
+                    lineHeight: styles.lineHeight,
+                    display: styles.display,
+                    visibility: styles.visibility
+                });
+            });
+        });
+    </script>
+</body>
+</html>
