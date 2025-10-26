@@ -166,13 +166,17 @@ export default function Home() {
             top: '50%',
             left: '50%',
             transform: 'translate(-50%, -50%)',
-            width: 1500,
+            width: '75vw', // 设置为页面宽度的3/4
+            height: '75vh', // 设置为页面高度的3/4
             maxWidth: '95vw',
+            maxHeight: '95vh',
             bgcolor: 'background.paper',
             boxShadow: 24,
             borderRadius: '20px',
             p: 0,
             overflow: 'hidden',
+            display: 'flex',
+            flexDirection: 'column',
           }}
         >
           {/* Header */}
@@ -202,13 +206,33 @@ export default function Home() {
             </Box>
           </Box>
 
-          {/* Scene Selection Grid - 3列布局 */}
-          <Box sx={{ p: 4, maxHeight: '60vh', overflowY: 'auto', backgroundColor: 'grey.50' }}>
+          {/* Scene Selection Grid - 动态响应布局 */}
+          <Box sx={{
+            p: {
+              xs: 2,
+              sm: 3,
+              md: 4
+            },
+            flex: 1, // 占据剩余的可用空间
+            overflowY: 'auto',
+            backgroundColor: 'grey.50',
+            minHeight: 0, // 确保可以正确收缩
+          }}>
             <Box
               sx={{
                 display: 'grid',
-                gridTemplateColumns: 'repeat(3, 1fr)',
-                gap: '60px 24px',
+                gridTemplateColumns: {
+                  xs: 'repeat(1, 1fr)',
+                  sm: 'repeat(2, 1fr)',
+                  md: 'repeat(3, 1fr)',
+                  lg: 'repeat(3, 1fr)',
+                },
+                gap: {
+                  xs: '16px',
+                  sm: '18px',
+                  md: '20px',
+                },
+                width: '100%',
               }}
             >
               {voiceScenes.map((scene) => (
@@ -216,8 +240,10 @@ export default function Home() {
                   key={scene.id}
                   sx={{
                     p: 2,
-                    height: 'auto',
-                    minHeight: 160,
+                    width: '100%',
+                    height: 'auto', // 高度由aspect-ratio控制
+                    aspectRatio: '2 / 1', // 宽高比2:1，高度为宽度的1/2
+                    minHeight: '60px', // 最小高度确保可用性
                     display: 'flex',
                     flexDirection: 'row',
                     alignItems: 'center',
@@ -227,6 +253,11 @@ export default function Home() {
                     borderRadius: 3,
                     backgroundColor: 'background.paper',
                     gap: 2,
+                    '@supports not (aspect-ratio: 2/1)': {
+                      // 降级方案：不支持aspect-ratio的浏览器
+                      height: '80px',
+                      minHeight: '80px',
+                    },
                     '&:hover': {
                       transform: 'translateY(-4px)',
                       boxShadow: 6,
@@ -244,12 +275,24 @@ export default function Home() {
                   {/* 左侧图标区域 */}
                   <Box
                     sx={{
-                      width: 64,
-                      height: 64,
+                      width: {
+                        xs: 48,
+                        sm: 56,
+                        md: 64,
+                      },
+                      height: {
+                        xs: 48,
+                        sm: 56,
+                        md: 64,
+                      },
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
-                      fontSize: '2rem',
+                      fontSize: {
+                        xs: '1.5rem',
+                        sm: '1.75rem',
+                        md: '2rem',
+                      },
                       flexShrink: 0,
                     }}
                   >
@@ -288,7 +331,16 @@ export default function Home() {
           </Box>
 
           {/* Action Buttons */}
-          <Box sx={{ p: 9, borderTop: 'none', backgroundColor: 'grey.50', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+          <Box sx={{
+            height: '25%', // 动态高度：父容器（模态框）高度的1/4
+            borderTop: 'none',
+            backgroundColor: 'grey.50',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            flexShrink: 0, // 防止被压缩
+            minHeight: 0, // 确保flex可以正确收缩
+          }}>
             <Button
               variant="contained"
               onClick={() => {
@@ -300,9 +352,15 @@ export default function Home() {
               sx={(theme) => ({
                 background: `linear-gradient(45deg, ${theme.palette.primary.main}, ${theme.palette.secondary.main})`,
                 color: 'white',
-                borderRadius: '24px',
-                px: 5,
-                py: 1.75,
+                borderRadius: '16px', // 使用固定圆角值而不是50%
+                height: '50%', // 动态高度：父容器的1/2
+                width: 'auto', // 宽度由aspect-ratio自动计算
+                aspectRatio: '2 / 1', // 宽高比2:1，确保宽度是高度的2倍
+                '@supports not (aspect-ratio: 2/1)': {
+                  // 降级方案：不支持aspect-ratio的浏览器
+                  height: '50%',
+                  width: '100%', // 高度的2倍 (50% * 2 = 100%)
+                },
                 fontSize: '16px',
                 fontWeight: 'bold',
                 textTransform: 'none',
@@ -310,6 +368,9 @@ export default function Home() {
                 border: 'none',
                 position: 'relative',
                 overflow: 'hidden',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
                 '&:before': {
                   content: '""',
                   position: 'absolute',
@@ -322,14 +383,14 @@ export default function Home() {
                 },
                 '&:hover': {
                   background: 'linear-gradient(45deg, #B38B00, #FF6B35)',
-                  transform: 'scale(1.05) translateY(-2px)',
+                  transform: 'scale(1.05)',
                   boxShadow: '0 8px 25px rgba(255, 199, 0, 0.4)',
                   '&:before': {
                     left: '100%',
                   },
                 },
                 '&:active': {
-                  transform: 'scale(1.02) translateY(-1px)',
+                  transform: 'scale(1.02)',
                   boxShadow: '0 4px 15px rgba(255, 199, 0, 0.3)',
                 },
                 transition: 'all 0.3s ease',

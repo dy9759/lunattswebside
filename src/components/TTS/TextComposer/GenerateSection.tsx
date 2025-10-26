@@ -21,13 +21,16 @@ export default function GenerateSection({
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
-        justifyContent: 'flex-end',
-        gap: 2,
+        justifyContent: 'space-between', // 改为space-between确保在同一行
+        gap: 1, // 减少gap让文本更靠近button
         flexShrink: 0, // 防止被压缩
         marginTop: 'auto', // 推到底部
+        width: '100%', // 确保占满宽度
       }}
     >
-      <GenerationCounter remaining={remainingGenerations} />
+      <Box sx={{ flexGrow: 1 }}>
+        <GenerationCounter remaining={remainingGenerations} />
+      </Box>
       <GenerateButton
         onGenerate={onGenerate}
         disabled={!canGenerate}
