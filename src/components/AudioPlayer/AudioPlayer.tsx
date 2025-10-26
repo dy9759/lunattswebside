@@ -120,8 +120,15 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({
         <Avatar
           src={currentVoice.avatar}
           sx={{
-            width: 48,
-            height: 48,
+            width: 80,
+            height: 80,
+            objectFit: 'cover',
+            objectPosition: 'center',
+            // 确保图片填充整个Avatar容器
+            '& img': {
+              objectFit: 'cover',
+              objectPosition: 'center',
+            },
             // 恢复为圆形（默认50%）
             boxShadow: '0 0 0 3px #FFC700, 0 0 15px 5px rgba(255, 199, 0, 0.5)',
           }}

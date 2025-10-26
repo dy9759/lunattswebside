@@ -1,0 +1,2574 @@
+{
+  "timestamp": "2025-10-26T00:02:53.340282",
+  "total_avatars": 5,
+  "analysis_results": [
+    {
+      "index": 0,
+      "bounding_box": {
+        "x": 1266.6640625,
+        "y": 431.75,
+        "width": 80,
+        "height": 80
+      },
+      "image_attributes": {
+        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuCc_q5lKI96x0VBlx739jZGNOTosws8ewD-vgIan_rAhVz-prn32Tbb1IXYuVNgSBksRLzZioP7ppJtkFuspsOo4n_MKd2P0JhylEQ8Yr3UGuo1_7XL2eh0OGBG1cOfhv-ECSSFwYP7pnN9hF15L5ecSnrgIYX27CXQN7OtqncyVAa4_q_UqkfznIu2wsKzPzWHy36KzZtFXnYK2CyQA9Jd2yGwdGvyN1ox5BaQiSd3QJPUSSp5FdHVjA7evdtlPwQbDmlUBTo7d-qa",
+        "currentSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuCc_q5lKI96x0VBlx739jZGNOTosws8ewD-vgIan_rAhVz-prn32Tbb1IXYuVNgSBksRLzZioP7ppJtkFuspsOo4n_MKd2P0JhylEQ8Yr3UGuo1_7XL2eh0OGBG1cOfhv-ECSSFwYP7pnN9hF15L5ecSnrgIYX27CXQN7OtqncyVAa4_q_UqkfznIu2wsKzPzWHy36KzZtFXnYK2CyQA9Jd2yGwdGvyN1ox5BaQiSd3QJPUSSp5FdHVjA7evdtlPwQbDmlUBTo7d-qa",
+        "alt": "",
+        "naturalWidth": 512,
+        "naturalHeight": 512,
+        "width": 80,
+        "height": 80,
+        "complete": true,
+        "loading": "auto",
+        "decoding": "auto"
+      },
+      "computed_styles": {
+        "width": "80px",
+        "height": "80px",
+        "maxWidth": "100%",
+        "maxHeight": "none",
+        "minWidth": "auto",
+        "minHeight": "auto",
+        "objectFit": "cover",
+        "objectPosition": "50% 50%",
+        "display": "block",
+        "position": "static",
+        "overflow": "clip",
+        "visibility": "visible",
+        "opacity": "1",
+        "transform": "none",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "zIndex": "auto"
+      },
+      "parent_info": {
+        "tagName": "DIV",
+        "className": "MuiAvatar-root MuiAvatar-circular mui-17odf8i-MuiAvatar-root",
+        "rect": {
+          "x": 1266.6640625,
+          "y": 431.75,
+          "width": 80,
+          "height": 80
+        },
+        "styles": {
+          "width": "80px",
+          "height": "80px",
+          "maxWidth": "none",
+          "maxHeight": "none",
+          "minWidth": "auto",
+          "minHeight": "auto",
+          "display": "flex",
+          "position": "relative",
+          "overflow": "hidden",
+          "overflowX": "hidden",
+          "overflowY": "hidden",
+          "flexDirection": "row",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "padding": "0px",
+          "margin": "0px",
+          "borderRadius": "50%"
+        },
+        "imagePosition": {
+          "x": 0,
+          "y": 0,
+          "width": 80,
+          "height": 80
+        }
+      },
+      "is_clipped": false,
+      "clipping_info": {
+        "right": 0,
+        "left": 0,
+        "bottom": 0,
+        "top": 0
+      },
+      "scale_x": 0.15625,
+      "scale_y": 0.15625,
+      "aspect_ratio_preserved": true,
+      "container_constraints": [
+        {
+          "tagName": "DIV",
+          "className": "MuiAvatar-root MuiAvatar-circular mui-17odf8i-MuiAvatar-root",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": true,
+          "sizeConstraints": {
+            "width": "80px",
+            "height": "80px"
+          },
+          "overflowConstraints": {
+            "overflow": "hidden",
+            "overflowX": "hidden",
+            "overflowY": "hidden"
+          }
+        },
+        {
+          "tagName": "DIV",
+          "className": "MuiBox-root mui-j0ozid",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": false,
+          "sizeConstraints": {
+            "width": "260.445px",
+            "height": "80px"
+          },
+          "overflowConstraints": {}
+        },
+        {
+          "tagName": "DIV",
+          "className": "MuiBox-root mui-l1q9gr",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": false,
+          "sizeConstraints": {
+            "width": "429.328px",
+            "height": "99.5px",
+            "minHeight": "72px"
+          },
+          "overflowConstraints": {}
+        },
+        {
+          "tagName": "DIV",
+          "className": "MuiBox-root mui-r8a4jz",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": true,
+          "sizeConstraints": {
+            "width": "437.328px",
+            "height": "446px",
+            "minHeight": "0px"
+          },
+          "overflowConstraints": {
+            "overflow": "hidden auto",
+            "overflowX": "hidden",
+            "overflowY": "auto"
+          }
+        },
+        {
+          "tagName": "DIV",
+          "className": "MuiCardContent-root mui-pdmbyp-MuiCardContent-root",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": false,
+          "sizeConstraints": {
+            "width": "485.328px",
+            "height": "690px",
+            "minHeight": "0px"
+          },
+          "overflowConstraints": {}
+        },
+        {
+          "tagName": "DIV",
+          "className": "MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root mui-19alk1j-MuiPaper-root-MuiCard-root",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": true,
+          "sizeConstraints": {
+            "width": "485.328px",
+            "height": "690px",
+            "minHeight": "0px"
+          },
+          "overflowConstraints": {
+            "overflow": "hidden",
+            "overflowX": "hidden",
+            "overflowY": "hidden"
+          }
+        },
+        {
+          "tagName": "DIV",
+          "className": "MuiBox-root mui-givjnn",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": false,
+          "sizeConstraints": {
+            "width": "485.328px",
+            "height": "754px",
+            "minWidth": "0px",
+            "minHeight": "0px"
+          },
+          "overflowConstraints": {}
+        },
+        {
+          "tagName": "DIV",
+          "className": "MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-4 mui-1fipu0e-MuiGrid-root",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": true,
+          "sizeConstraints": {
+            "width": "509.328px",
+            "height": "778px",
+            "maxWidth": "33.3333%",
+            "maxHeight": "100%"
+          },
+          "overflowConstraints": {
+            "overflow": "hidden",
+            "overflowX": "hidden",
+            "overflowY": "hidden"
+          }
+        },
+        {
+          "tagName": "DIV",
+          "className": "MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-spacing-sm-2 MuiGrid-spacing-md-3 mui-e50bdq-MuiGrid-root",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": true,
+          "sizeConstraints": {
+            "width": "1528px",
+            "height": "778px",
+            "maxHeight": "100%",
+            "minHeight": "0px"
+          },
+          "overflowConstraints": {
+            "overflow": "hidden",
+            "overflowX": "hidden",
+            "overflowY": "hidden"
+          }
+        },
+        {
+          "tagName": "DIV",
+          "className": "MuiBox-root mui-1hswtsr",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": true,
+          "sizeConstraints": {
+            "width": "1504px",
+            "height": "778px",
+            "maxWidth": "1920px",
+            "minWidth": "0px",
+            "minHeight": "0px"
+          },
+          "overflowConstraints": {
+            "overflow": "hidden",
+            "overflowX": "hidden",
+            "overflowY": "hidden"
+          }
+        },
+        {
+          "tagName": "MAIN",
+          "className": "container mx-auto p-2 md:p-4",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": true,
+          "sizeConstraints": {
+            "width": "1536px",
+            "height": "810px",
+            "maxWidth": "1536px"
+          },
+          "overflowConstraints": {
+            "overflow": "hidden",
+            "overflowX": "hidden",
+            "overflowY": "hidden"
+          }
+        },
+        {
+          "tagName": "DIV",
+          "className": "flex flex-col bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark antialiased overflow-hidden",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": true,
+          "sizeConstraints": {
+            "width": "1920px",
+            "height": "1080px",
+            "minWidth": "0px",
+            "minHeight": "0px"
+          },
+          "overflowConstraints": {
+            "overflow": "hidden",
+            "overflowX": "hidden",
+            "overflowY": "hidden"
+          }
+        }
+      ],
+      "has_constraints": true,
+      "image_loaded": true,
+      "has_natural_dimensions": true
+    },
+    {
+      "index": 1,
+      "bounding_box": {
+        "x": 1266.6640625,
+        "y": 547.25,
+        "width": 80,
+        "height": 80
+      },
+      "image_attributes": {
+        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuBlpThoYNHFrLIBRbsVGrd_5ry_K_DKy4UW3m5LLa9pC7TUkGPzbUoDPlDjEWJXEyT1dofOklhP9tCHB-CsyuN5RS6WWvgro8g3-59fx1wRJZE3r8w96hpSAsOv0AdS0OnpJfu07PXrU2GmRu9YA8JYK6nMKs4jNFLy7oihMYa-MU7uZMnRg1UEeQxx54YUPQ_v6hBV2J-VMQ-D7Ehswt9V9gEyyJcuvxUq-8YvcikJLGbyMDMZZMXYrnrDT5tEwLoF9bzLE4hxoUhh",
+        "currentSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuBlpThoYNHFrLIBRbsVGrd_5ry_K_DKy4UW3m5LLa9pC7TUkGPzbUoDPlDjEWJXEyT1dofOklhP9tCHB-CsyuN5RS6WWvgro8g3-59fx1wRJZE3r8w96hpSAsOv0AdS0OnpJfu07PXrU2GmRu9YA8JYK6nMKs4jNFLy7oihMYa-MU7uZMnRg1UEeQxx54YUPQ_v6hBV2J-VMQ-D7Ehswt9V9gEyyJcuvxUq-8YvcikJLGbyMDMZZMXYrnrDT5tEwLoF9bzLE4hxoUhh",
+        "alt": "",
+        "naturalWidth": 512,
+        "naturalHeight": 512,
+        "width": 80,
+        "height": 80,
+        "complete": true,
+        "loading": "auto",
+        "decoding": "auto"
+      },
+      "computed_styles": {
+        "width": "80px",
+        "height": "80px",
+        "maxWidth": "100%",
+        "maxHeight": "none",
+        "minWidth": "auto",
+        "minHeight": "auto",
+        "objectFit": "cover",
+        "objectPosition": "50% 50%",
+        "display": "block",
+        "position": "static",
+        "overflow": "clip",
+        "visibility": "visible",
+        "opacity": "1",
+        "transform": "none",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "zIndex": "auto"
+      },
+      "parent_info": {
+        "tagName": "DIV",
+        "className": "MuiAvatar-root MuiAvatar-circular mui-17odf8i-MuiAvatar-root",
+        "rect": {
+          "x": 1266.6640625,
+          "y": 547.25,
+          "width": 80,
+          "height": 80
+        },
+        "styles": {
+          "width": "80px",
+          "height": "80px",
+          "maxWidth": "none",
+          "maxHeight": "none",
+          "minWidth": "auto",
+          "minHeight": "auto",
+          "display": "flex",
+          "position": "relative",
+          "overflow": "hidden",
+          "overflowX": "hidden",
+          "overflowY": "hidden",
+          "flexDirection": "row",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "padding": "0px",
+          "margin": "0px",
+          "borderRadius": "50%"
+        },
+        "imagePosition": {
+          "x": 0,
+          "y": 0,
+          "width": 80,
+          "height": 80
+        }
+      },
+      "is_clipped": false,
+      "clipping_info": {
+        "right": 0,
+        "left": 0,
+        "bottom": 0,
+        "top": 0
+      },
+      "scale_x": 0.15625,
+      "scale_y": 0.15625,
+      "aspect_ratio_preserved": true,
+      "container_constraints": [
+        {
+          "tagName": "DIV",
+          "className": "MuiAvatar-root MuiAvatar-circular mui-17odf8i-MuiAvatar-root",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": true,
+          "sizeConstraints": {
+            "width": "80px",
+            "height": "80px"
+          },
+          "overflowConstraints": {
+            "overflow": "hidden",
+            "overflowX": "hidden",
+            "overflowY": "hidden"
+          }
+        },
+        {
+          "tagName": "DIV",
+          "className": "MuiBox-root mui-j0ozid",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": false,
+          "sizeConstraints": {
+            "width": "263.766px",
+            "height": "80px"
+          },
+          "overflowConstraints": {}
+        },
+        {
+          "tagName": "DIV",
+          "className": "MuiBox-root mui-l1q9gr",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": false,
+          "sizeConstraints": {
+            "width": "429.328px",
+            "height": "99.5px",
+            "minHeight": "72px"
+          },
+          "overflowConstraints": {}
+        },
+        {
+          "tagName": "DIV",
+          "className": "MuiBox-root mui-r8a4jz",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": true,
+          "sizeConstraints": {
+            "width": "437.328px",
+            "height": "446px",
+            "minHeight": "0px"
+          },
+          "overflowConstraints": {
+            "overflow": "hidden auto",
+            "overflowX": "hidden",
+            "overflowY": "auto"
+          }
+        },
+        {
+          "tagName": "DIV",
+          "className": "MuiCardContent-root mui-pdmbyp-MuiCardContent-root",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": false,
+          "sizeConstraints": {
+            "width": "485.328px",
+            "height": "690px",
+            "minHeight": "0px"
+          },
+          "overflowConstraints": {}
+        },
+        {
+          "tagName": "DIV",
+          "className": "MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root mui-19alk1j-MuiPaper-root-MuiCard-root",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": true,
+          "sizeConstraints": {
+            "width": "485.328px",
+            "height": "690px",
+            "minHeight": "0px"
+          },
+          "overflowConstraints": {
+            "overflow": "hidden",
+            "overflowX": "hidden",
+            "overflowY": "hidden"
+          }
+        },
+        {
+          "tagName": "DIV",
+          "className": "MuiBox-root mui-givjnn",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": false,
+          "sizeConstraints": {
+            "width": "485.328px",
+            "height": "754px",
+            "minWidth": "0px",
+            "minHeight": "0px"
+          },
+          "overflowConstraints": {}
+        },
+        {
+          "tagName": "DIV",
+          "className": "MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-4 mui-1fipu0e-MuiGrid-root",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": true,
+          "sizeConstraints": {
+            "width": "509.328px",
+            "height": "778px",
+            "maxWidth": "33.3333%",
+            "maxHeight": "100%"
+          },
+          "overflowConstraints": {
+            "overflow": "hidden",
+            "overflowX": "hidden",
+            "overflowY": "hidden"
+          }
+        },
+        {
+          "tagName": "DIV",
+          "className": "MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-spacing-sm-2 MuiGrid-spacing-md-3 mui-e50bdq-MuiGrid-root",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": true,
+          "sizeConstraints": {
+            "width": "1528px",
+            "height": "778px",
+            "maxHeight": "100%",
+            "minHeight": "0px"
+          },
+          "overflowConstraints": {
+            "overflow": "hidden",
+            "overflowX": "hidden",
+            "overflowY": "hidden"
+          }
+        },
+        {
+          "tagName": "DIV",
+          "className": "MuiBox-root mui-1hswtsr",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": true,
+          "sizeConstraints": {
+            "width": "1504px",
+            "height": "778px",
+            "maxWidth": "1920px",
+            "minWidth": "0px",
+            "minHeight": "0px"
+          },
+          "overflowConstraints": {
+            "overflow": "hidden",
+            "overflowX": "hidden",
+            "overflowY": "hidden"
+          }
+        },
+        {
+          "tagName": "MAIN",
+          "className": "container mx-auto p-2 md:p-4",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": true,
+          "sizeConstraints": {
+            "width": "1536px",
+            "height": "810px",
+            "maxWidth": "1536px"
+          },
+          "overflowConstraints": {
+            "overflow": "hidden",
+            "overflowX": "hidden",
+            "overflowY": "hidden"
+          }
+        },
+        {
+          "tagName": "DIV",
+          "className": "flex flex-col bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark antialiased overflow-hidden",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": true,
+          "sizeConstraints": {
+            "width": "1920px",
+            "height": "1080px",
+            "minWidth": "0px",
+            "minHeight": "0px"
+          },
+          "overflowConstraints": {
+            "overflow": "hidden",
+            "overflowX": "hidden",
+            "overflowY": "hidden"
+          }
+        }
+      ],
+      "has_constraints": true,
+      "image_loaded": true,
+      "has_natural_dimensions": true
+    },
+    {
+      "index": 2,
+      "bounding_box": {
+        "x": 1266.6640625,
+        "y": 662.75,
+        "width": 80,
+        "height": 80
+      },
+      "image_attributes": {
+        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuAUpv7D5u3r6RUso8r_8tsHd_o9_AlBNWBQAEzg3cLsBBHNSg2r0x7RVZqWqYgLjTAbh26pLigLve5BlXbdsDZHRSv1ZubxGtTVmovTerCEbkFFOG8pklmTgQ8MPmcfXegVn9qoYa_54BVeZebd9tpU2OuWMaAc7wRn86V-XZ5R8znk2BlIRX4UZL0a3nOjUQ7Lriofuyxb6piHJkFPF8JFSBDokLflLYisu0gqU2bJghyZVoG3ryp3TUA4oNOdcT4Co6iZYLkU4AV1",
+        "currentSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuAUpv7D5u3r6RUso8r_8tsHd_o9_AlBNWBQAEzg3cLsBBHNSg2r0x7RVZqWqYgLjTAbh26pLigLve5BlXbdsDZHRSv1ZubxGtTVmovTerCEbkFFOG8pklmTgQ8MPmcfXegVn9qoYa_54BVeZebd9tpU2OuWMaAc7wRn86V-XZ5R8znk2BlIRX4UZL0a3nOjUQ7Lriofuyxb6piHJkFPF8JFSBDokLflLYisu0gqU2bJghyZVoG3ryp3TUA4oNOdcT4Co6iZYLkU4AV1",
+        "alt": "",
+        "naturalWidth": 512,
+        "naturalHeight": 512,
+        "width": 80,
+        "height": 80,
+        "complete": true,
+        "loading": "auto",
+        "decoding": "auto"
+      },
+      "computed_styles": {
+        "width": "80px",
+        "height": "80px",
+        "maxWidth": "100%",
+        "maxHeight": "none",
+        "minWidth": "auto",
+        "minHeight": "auto",
+        "objectFit": "cover",
+        "objectPosition": "50% 50%",
+        "display": "block",
+        "position": "static",
+        "overflow": "clip",
+        "visibility": "visible",
+        "opacity": "1",
+        "transform": "none",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "zIndex": "auto"
+      },
+      "parent_info": {
+        "tagName": "DIV",
+        "className": "MuiAvatar-root MuiAvatar-circular mui-17odf8i-MuiAvatar-root",
+        "rect": {
+          "x": 1266.6640625,
+          "y": 662.75,
+          "width": 80,
+          "height": 80
+        },
+        "styles": {
+          "width": "80px",
+          "height": "80px",
+          "maxWidth": "none",
+          "maxHeight": "none",
+          "minWidth": "auto",
+          "minHeight": "auto",
+          "display": "flex",
+          "position": "relative",
+          "overflow": "hidden",
+          "overflowX": "hidden",
+          "overflowY": "hidden",
+          "flexDirection": "row",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "padding": "0px",
+          "margin": "0px",
+          "borderRadius": "50%"
+        },
+        "imagePosition": {
+          "x": 0,
+          "y": 0,
+          "width": 80,
+          "height": 80
+        }
+      },
+      "is_clipped": false,
+      "clipping_info": {
+        "right": 0,
+        "left": 0,
+        "bottom": 0,
+        "top": 0
+      },
+      "scale_x": 0.15625,
+      "scale_y": 0.15625,
+      "aspect_ratio_preserved": true,
+      "container_constraints": [
+        {
+          "tagName": "DIV",
+          "className": "MuiAvatar-root MuiAvatar-circular mui-17odf8i-MuiAvatar-root",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": true,
+          "sizeConstraints": {
+            "width": "80px",
+            "height": "80px"
+          },
+          "overflowConstraints": {
+            "overflow": "hidden",
+            "overflowX": "hidden",
+            "overflowY": "hidden"
+          }
+        },
+        {
+          "tagName": "DIV",
+          "className": "MuiBox-root mui-j0ozid",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": false,
+          "sizeConstraints": {
+            "width": "292.914px",
+            "height": "80px"
+          },
+          "overflowConstraints": {}
+        },
+        {
+          "tagName": "DIV",
+          "className": "MuiBox-root mui-l1q9gr",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": false,
+          "sizeConstraints": {
+            "width": "429.328px",
+            "height": "99.5px",
+            "minHeight": "72px"
+          },
+          "overflowConstraints": {}
+        },
+        {
+          "tagName": "DIV",
+          "className": "MuiBox-root mui-r8a4jz",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": true,
+          "sizeConstraints": {
+            "width": "437.328px",
+            "height": "446px",
+            "minHeight": "0px"
+          },
+          "overflowConstraints": {
+            "overflow": "hidden auto",
+            "overflowX": "hidden",
+            "overflowY": "auto"
+          }
+        },
+        {
+          "tagName": "DIV",
+          "className": "MuiCardContent-root mui-pdmbyp-MuiCardContent-root",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": false,
+          "sizeConstraints": {
+            "width": "485.328px",
+            "height": "690px",
+            "minHeight": "0px"
+          },
+          "overflowConstraints": {}
+        },
+        {
+          "tagName": "DIV",
+          "className": "MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root mui-19alk1j-MuiPaper-root-MuiCard-root",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": true,
+          "sizeConstraints": {
+            "width": "485.328px",
+            "height": "690px",
+            "minHeight": "0px"
+          },
+          "overflowConstraints": {
+            "overflow": "hidden",
+            "overflowX": "hidden",
+            "overflowY": "hidden"
+          }
+        },
+        {
+          "tagName": "DIV",
+          "className": "MuiBox-root mui-givjnn",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": false,
+          "sizeConstraints": {
+            "width": "485.328px",
+            "height": "754px",
+            "minWidth": "0px",
+            "minHeight": "0px"
+          },
+          "overflowConstraints": {}
+        },
+        {
+          "tagName": "DIV",
+          "className": "MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-4 mui-1fipu0e-MuiGrid-root",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": true,
+          "sizeConstraints": {
+            "width": "509.328px",
+            "height": "778px",
+            "maxWidth": "33.3333%",
+            "maxHeight": "100%"
+          },
+          "overflowConstraints": {
+            "overflow": "hidden",
+            "overflowX": "hidden",
+            "overflowY": "hidden"
+          }
+        },
+        {
+          "tagName": "DIV",
+          "className": "MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-spacing-sm-2 MuiGrid-spacing-md-3 mui-e50bdq-MuiGrid-root",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": true,
+          "sizeConstraints": {
+            "width": "1528px",
+            "height": "778px",
+            "maxHeight": "100%",
+            "minHeight": "0px"
+          },
+          "overflowConstraints": {
+            "overflow": "hidden",
+            "overflowX": "hidden",
+            "overflowY": "hidden"
+          }
+        },
+        {
+          "tagName": "DIV",
+          "className": "MuiBox-root mui-1hswtsr",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": true,
+          "sizeConstraints": {
+            "width": "1504px",
+            "height": "778px",
+            "maxWidth": "1920px",
+            "minWidth": "0px",
+            "minHeight": "0px"
+          },
+          "overflowConstraints": {
+            "overflow": "hidden",
+            "overflowX": "hidden",
+            "overflowY": "hidden"
+          }
+        },
+        {
+          "tagName": "MAIN",
+          "className": "container mx-auto p-2 md:p-4",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": true,
+          "sizeConstraints": {
+            "width": "1536px",
+            "height": "810px",
+            "maxWidth": "1536px"
+          },
+          "overflowConstraints": {
+            "overflow": "hidden",
+            "overflowX": "hidden",
+            "overflowY": "hidden"
+          }
+        },
+        {
+          "tagName": "DIV",
+          "className": "flex flex-col bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark antialiased overflow-hidden",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": true,
+          "sizeConstraints": {
+            "width": "1920px",
+            "height": "1080px",
+            "minWidth": "0px",
+            "minHeight": "0px"
+          },
+          "overflowConstraints": {
+            "overflow": "hidden",
+            "overflowX": "hidden",
+            "overflowY": "hidden"
+          }
+        }
+      ],
+      "has_constraints": true,
+      "image_loaded": true,
+      "has_natural_dimensions": true
+    },
+    {
+      "index": 3,
+      "bounding_box": {
+        "x": 1266.6640625,
+        "y": 778.25,
+        "width": 80,
+        "height": 80
+      },
+      "image_attributes": {
+        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuC3_ukyNZI6oqZ_wWTmUN1YHHLqyt3N0amhgDMS7-K1bL_QznI8ySWdii63nVLOl7CSDfl-GjDWaDr1Ybx52dt_M4QwQwJ1r5OGrJTRo7JwcaOpYimmJDX0JAMXRSsaNSep_mtZP_8vQ_hIqFUF9RLqjn50p853xfTFdgr7GVtRCtf6Ngej8_DanY7iIb2NPbMUy4sdErbwH7B9fs-sbB_tAqSP8lXPClFXSd0tVdFlQylRAWjvsPbJXJp4W6a8-hTDClZWvL0pLnqN",
+        "currentSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuC3_ukyNZI6oqZ_wWTmUN1YHHLqyt3N0amhgDMS7-K1bL_QznI8ySWdii63nVLOl7CSDfl-GjDWaDr1Ybx52dt_M4QwQwJ1r5OGrJTRo7JwcaOpYimmJDX0JAMXRSsaNSep_mtZP_8vQ_hIqFUF9RLqjn50p853xfTFdgr7GVtRCtf6Ngej8_DanY7iIb2NPbMUy4sdErbwH7B9fs-sbB_tAqSP8lXPClFXSd0tVdFlQylRAWjvsPbJXJp4W6a8-hTDClZWvL0pLnqN",
+        "alt": "",
+        "naturalWidth": 512,
+        "naturalHeight": 512,
+        "width": 80,
+        "height": 80,
+        "complete": true,
+        "loading": "auto",
+        "decoding": "auto"
+      },
+      "computed_styles": {
+        "width": "80px",
+        "height": "80px",
+        "maxWidth": "100%",
+        "maxHeight": "none",
+        "minWidth": "auto",
+        "minHeight": "auto",
+        "objectFit": "cover",
+        "objectPosition": "50% 50%",
+        "display": "block",
+        "position": "static",
+        "overflow": "clip",
+        "visibility": "visible",
+        "opacity": "1",
+        "transform": "none",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "zIndex": "auto"
+      },
+      "parent_info": {
+        "tagName": "DIV",
+        "className": "MuiAvatar-root MuiAvatar-circular mui-17odf8i-MuiAvatar-root",
+        "rect": {
+          "x": 1266.6640625,
+          "y": 778.25,
+          "width": 80,
+          "height": 80
+        },
+        "styles": {
+          "width": "80px",
+          "height": "80px",
+          "maxWidth": "none",
+          "maxHeight": "none",
+          "minWidth": "auto",
+          "minHeight": "auto",
+          "display": "flex",
+          "position": "relative",
+          "overflow": "hidden",
+          "overflowX": "hidden",
+          "overflowY": "hidden",
+          "flexDirection": "row",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "padding": "0px",
+          "margin": "0px",
+          "borderRadius": "50%"
+        },
+        "imagePosition": {
+          "x": 0,
+          "y": 0,
+          "width": 80,
+          "height": 80
+        }
+      },
+      "is_clipped": false,
+      "clipping_info": {
+        "right": 0,
+        "left": 0,
+        "bottom": 0,
+        "top": 0
+      },
+      "scale_x": 0.15625,
+      "scale_y": 0.15625,
+      "aspect_ratio_preserved": true,
+      "container_constraints": [
+        {
+          "tagName": "DIV",
+          "className": "MuiAvatar-root MuiAvatar-circular mui-17odf8i-MuiAvatar-root",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": true,
+          "sizeConstraints": {
+            "width": "80px",
+            "height": "80px"
+          },
+          "overflowConstraints": {
+            "overflow": "hidden",
+            "overflowX": "hidden",
+            "overflowY": "hidden"
+          }
+        },
+        {
+          "tagName": "DIV",
+          "className": "MuiBox-root mui-j0ozid",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": false,
+          "sizeConstraints": {
+            "width": "233.461px",
+            "height": "80px"
+          },
+          "overflowConstraints": {}
+        },
+        {
+          "tagName": "DIV",
+          "className": "MuiBox-root mui-l1q9gr",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": false,
+          "sizeConstraints": {
+            "width": "429.328px",
+            "height": "99.5px",
+            "minHeight": "72px"
+          },
+          "overflowConstraints": {}
+        },
+        {
+          "tagName": "DIV",
+          "className": "MuiBox-root mui-r8a4jz",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": true,
+          "sizeConstraints": {
+            "width": "437.328px",
+            "height": "446px",
+            "minHeight": "0px"
+          },
+          "overflowConstraints": {
+            "overflow": "hidden auto",
+            "overflowX": "hidden",
+            "overflowY": "auto"
+          }
+        },
+        {
+          "tagName": "DIV",
+          "className": "MuiCardContent-root mui-pdmbyp-MuiCardContent-root",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": false,
+          "sizeConstraints": {
+            "width": "485.328px",
+            "height": "690px",
+            "minHeight": "0px"
+          },
+          "overflowConstraints": {}
+        },
+        {
+          "tagName": "DIV",
+          "className": "MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root mui-19alk1j-MuiPaper-root-MuiCard-root",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": true,
+          "sizeConstraints": {
+            "width": "485.328px",
+            "height": "690px",
+            "minHeight": "0px"
+          },
+          "overflowConstraints": {
+            "overflow": "hidden",
+            "overflowX": "hidden",
+            "overflowY": "hidden"
+          }
+        },
+        {
+          "tagName": "DIV",
+          "className": "MuiBox-root mui-givjnn",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": false,
+          "sizeConstraints": {
+            "width": "485.328px",
+            "height": "754px",
+            "minWidth": "0px",
+            "minHeight": "0px"
+          },
+          "overflowConstraints": {}
+        },
+        {
+          "tagName": "DIV",
+          "className": "MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-4 mui-1fipu0e-MuiGrid-root",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": true,
+          "sizeConstraints": {
+            "width": "509.328px",
+            "height": "778px",
+            "maxWidth": "33.3333%",
+            "maxHeight": "100%"
+          },
+          "overflowConstraints": {
+            "overflow": "hidden",
+            "overflowX": "hidden",
+            "overflowY": "hidden"
+          }
+        },
+        {
+          "tagName": "DIV",
+          "className": "MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-spacing-sm-2 MuiGrid-spacing-md-3 mui-e50bdq-MuiGrid-root",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": true,
+          "sizeConstraints": {
+            "width": "1528px",
+            "height": "778px",
+            "maxHeight": "100%",
+            "minHeight": "0px"
+          },
+          "overflowConstraints": {
+            "overflow": "hidden",
+            "overflowX": "hidden",
+            "overflowY": "hidden"
+          }
+        },
+        {
+          "tagName": "DIV",
+          "className": "MuiBox-root mui-1hswtsr",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": true,
+          "sizeConstraints": {
+            "width": "1504px",
+            "height": "778px",
+            "maxWidth": "1920px",
+            "minWidth": "0px",
+            "minHeight": "0px"
+          },
+          "overflowConstraints": {
+            "overflow": "hidden",
+            "overflowX": "hidden",
+            "overflowY": "hidden"
+          }
+        },
+        {
+          "tagName": "MAIN",
+          "className": "container mx-auto p-2 md:p-4",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": true,
+          "sizeConstraints": {
+            "width": "1536px",
+            "height": "810px",
+            "maxWidth": "1536px"
+          },
+          "overflowConstraints": {
+            "overflow": "hidden",
+            "overflowX": "hidden",
+            "overflowY": "hidden"
+          }
+        },
+        {
+          "tagName": "DIV",
+          "className": "flex flex-col bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark antialiased overflow-hidden",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": true,
+          "sizeConstraints": {
+            "width": "1920px",
+            "height": "1080px",
+            "minWidth": "0px",
+            "minHeight": "0px"
+          },
+          "overflowConstraints": {
+            "overflow": "hidden",
+            "overflowX": "hidden",
+            "overflowY": "hidden"
+          }
+        }
+      ],
+      "has_constraints": true,
+      "image_loaded": true,
+      "has_natural_dimensions": true
+    },
+    {
+      "index": 4,
+      "bounding_box": {
+        "x": 360,
+        "y": 1008,
+        "width": 48,
+        "height": 48
+      },
+      "image_attributes": {
+        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuBqDTmRxce4NpOUiQPfRpPS1WJWQd12k6KhoO7sxELYV4W9plR-wwRd7QhbJ40kP6dLOdhJgLjC6EeBA8UVOtuqSds0CSebRQZROYruXs3kB89ovRGf_rrKI10amndrMpgNgJ1WYhxxOn87Hihxoc2FZmsRzpO-IvruKEJtOGE-Q-xq8fLX8hyIyLORo9-n39EXbUgEq7THgXM4hNDs4U5FRu1w98jR5Wu37qpEOIZloFkOWVBzR4wvVvHYDJ-DjaBwGdF15HU4F2DJ",
+        "currentSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuBqDTmRxce4NpOUiQPfRpPS1WJWQd12k6KhoO7sxELYV4W9plR-wwRd7QhbJ40kP6dLOdhJgLjC6EeBA8UVOtuqSds0CSebRQZROYruXs3kB89ovRGf_rrKI10amndrMpgNgJ1WYhxxOn87Hihxoc2FZmsRzpO-IvruKEJtOGE-Q-xq8fLX8hyIyLORo9-n39EXbUgEq7THgXM4hNDs4U5FRu1w98jR5Wu37qpEOIZloFkOWVBzR4wvVvHYDJ-DjaBwGdF15HU4F2DJ",
+        "alt": "",
+        "naturalWidth": 512,
+        "naturalHeight": 512,
+        "width": 48,
+        "height": 48,
+        "complete": true,
+        "loading": "auto",
+        "decoding": "auto"
+      },
+      "computed_styles": {
+        "width": "48px",
+        "height": "48px",
+        "maxWidth": "100%",
+        "maxHeight": "none",
+        "minWidth": "auto",
+        "minHeight": "auto",
+        "objectFit": "cover",
+        "objectPosition": "50% 50%",
+        "display": "block",
+        "position": "static",
+        "overflow": "clip",
+        "visibility": "visible",
+        "opacity": "1",
+        "transform": "none",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "zIndex": "auto"
+      },
+      "parent_info": {
+        "tagName": "DIV",
+        "className": "MuiAvatar-root MuiAvatar-circular mui-g6rcdu-MuiAvatar-root",
+        "rect": {
+          "x": 360,
+          "y": 1008,
+          "width": 48,
+          "height": 48
+        },
+        "styles": {
+          "width": "48px",
+          "height": "48px",
+          "maxWidth": "none",
+          "maxHeight": "none",
+          "minWidth": "auto",
+          "minHeight": "auto",
+          "display": "flex",
+          "position": "relative",
+          "overflow": "hidden",
+          "overflowX": "hidden",
+          "overflowY": "hidden",
+          "flexDirection": "row",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "padding": "0px",
+          "margin": "0px",
+          "borderRadius": "50%"
+        },
+        "imagePosition": {
+          "x": 0,
+          "y": 0,
+          "width": 48,
+          "height": 48
+        }
+      },
+      "is_clipped": false,
+      "clipping_info": {
+        "right": 0,
+        "left": 0,
+        "bottom": 0,
+        "top": 0
+      },
+      "scale_x": 0.09375,
+      "scale_y": 0.09375,
+      "aspect_ratio_preserved": true,
+      "container_constraints": [
+        {
+          "tagName": "DIV",
+          "className": "MuiAvatar-root MuiAvatar-circular mui-g6rcdu-MuiAvatar-root",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": true,
+          "sizeConstraints": {
+            "width": "48px",
+            "height": "48px"
+          },
+          "overflowConstraints": {
+            "overflow": "hidden",
+            "overflowX": "hidden",
+            "overflowY": "hidden"
+          }
+        },
+        {
+          "tagName": "DIV",
+          "className": "MuiBox-root mui-17aofi3",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": false,
+          "sizeConstraints": {
+            "width": "1200px",
+            "height": "64px",
+            "maxWidth": "1200px",
+            "minWidth": "0px",
+            "minHeight": "0px"
+          },
+          "overflowConstraints": {}
+        },
+        {
+          "tagName": "DIV",
+          "className": "MuiBox-root mui-fp9pgx",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": false,
+          "sizeConstraints": {
+            "width": "1920px",
+            "height": "96px",
+            "minWidth": "0px",
+            "minHeight": "0px"
+          },
+          "overflowConstraints": {}
+        },
+        {
+          "tagName": "DIV",
+          "className": "MuiBox-root mui-1hswtsr",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": true,
+          "sizeConstraints": {
+            "width": "1504px",
+            "height": "778px",
+            "maxWidth": "1920px",
+            "minWidth": "0px",
+            "minHeight": "0px"
+          },
+          "overflowConstraints": {
+            "overflow": "hidden",
+            "overflowX": "hidden",
+            "overflowY": "hidden"
+          }
+        },
+        {
+          "tagName": "MAIN",
+          "className": "container mx-auto p-2 md:p-4",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": true,
+          "sizeConstraints": {
+            "width": "1536px",
+            "height": "810px",
+            "maxWidth": "1536px"
+          },
+          "overflowConstraints": {
+            "overflow": "hidden",
+            "overflowX": "hidden",
+            "overflowY": "hidden"
+          }
+        },
+        {
+          "tagName": "DIV",
+          "className": "flex flex-col bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark antialiased overflow-hidden",
+          "hasSizeConstraints": true,
+          "hasOverflowConstraints": true,
+          "sizeConstraints": {
+            "width": "1920px",
+            "height": "1080px",
+            "minWidth": "0px",
+            "minHeight": "0px"
+          },
+          "overflowConstraints": {
+            "overflow": "hidden",
+            "overflowX": "hidden",
+            "overflowY": "hidden"
+          }
+        }
+      ],
+      "has_constraints": true,
+      "image_loaded": true,
+      "has_natural_dimensions": true
+    }
+  ],
+  "report": {
+    "status": "completed",
+    "statistics": {
+      "total_avatars": 5,
+      "clipped_avatars": 0,
+      "aspect_ratio_issues": 0,
+      "with_constraints": 5,
+      "images_not_loaded": 0,
+      "no_natural_dimensions": 0,
+      "clipping_types": {
+        "horizontal": 0,
+        "vertical": 0,
+        "both": 0
+      }
+    },
+    "issues_detected": false,
+    "recommendations": [
+      {
+        "priority": "low",
+        "issue": "优化建议",
+        "category": "optimization",
+        "solutions": [
+          "使用适当的图片格式 (WebP, AVIF)",
+          "实现响应式图片尺寸",
+          "添加图片 lazy loading",
+          "使用 CSS 变量统一头像尺寸"
+        ]
+      }
+    ],
+    "detailed_analysis": [
+      {
+        "index": 0,
+        "bounding_box": {
+          "x": 1266.6640625,
+          "y": 431.75,
+          "width": 80,
+          "height": 80
+        },
+        "image_attributes": {
+          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuCc_q5lKI96x0VBlx739jZGNOTosws8ewD-vgIan_rAhVz-prn32Tbb1IXYuVNgSBksRLzZioP7ppJtkFuspsOo4n_MKd2P0JhylEQ8Yr3UGuo1_7XL2eh0OGBG1cOfhv-ECSSFwYP7pnN9hF15L5ecSnrgIYX27CXQN7OtqncyVAa4_q_UqkfznIu2wsKzPzWHy36KzZtFXnYK2CyQA9Jd2yGwdGvyN1ox5BaQiSd3QJPUSSp5FdHVjA7evdtlPwQbDmlUBTo7d-qa",
+          "currentSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuCc_q5lKI96x0VBlx739jZGNOTosws8ewD-vgIan_rAhVz-prn32Tbb1IXYuVNgSBksRLzZioP7ppJtkFuspsOo4n_MKd2P0JhylEQ8Yr3UGuo1_7XL2eh0OGBG1cOfhv-ECSSFwYP7pnN9hF15L5ecSnrgIYX27CXQN7OtqncyVAa4_q_UqkfznIu2wsKzPzWHy36KzZtFXnYK2CyQA9Jd2yGwdGvyN1ox5BaQiSd3QJPUSSp5FdHVjA7evdtlPwQbDmlUBTo7d-qa",
+          "alt": "",
+          "naturalWidth": 512,
+          "naturalHeight": 512,
+          "width": 80,
+          "height": 80,
+          "complete": true,
+          "loading": "auto",
+          "decoding": "auto"
+        },
+        "computed_styles": {
+          "width": "80px",
+          "height": "80px",
+          "maxWidth": "100%",
+          "maxHeight": "none",
+          "minWidth": "auto",
+          "minHeight": "auto",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "display": "block",
+          "position": "static",
+          "overflow": "clip",
+          "visibility": "visible",
+          "opacity": "1",
+          "transform": "none",
+          "borderRadius": "0px",
+          "boxShadow": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "zIndex": "auto"
+        },
+        "parent_info": {
+          "tagName": "DIV",
+          "className": "MuiAvatar-root MuiAvatar-circular mui-17odf8i-MuiAvatar-root",
+          "rect": {
+            "x": 1266.6640625,
+            "y": 431.75,
+            "width": 80,
+            "height": 80
+          },
+          "styles": {
+            "width": "80px",
+            "height": "80px",
+            "maxWidth": "none",
+            "maxHeight": "none",
+            "minWidth": "auto",
+            "minHeight": "auto",
+            "display": "flex",
+            "position": "relative",
+            "overflow": "hidden",
+            "overflowX": "hidden",
+            "overflowY": "hidden",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "padding": "0px",
+            "margin": "0px",
+            "borderRadius": "50%"
+          },
+          "imagePosition": {
+            "x": 0,
+            "y": 0,
+            "width": 80,
+            "height": 80
+          }
+        },
+        "is_clipped": false,
+        "clipping_info": {
+          "right": 0,
+          "left": 0,
+          "bottom": 0,
+          "top": 0
+        },
+        "scale_x": 0.15625,
+        "scale_y": 0.15625,
+        "aspect_ratio_preserved": true,
+        "container_constraints": [
+          {
+            "tagName": "DIV",
+            "className": "MuiAvatar-root MuiAvatar-circular mui-17odf8i-MuiAvatar-root",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": true,
+            "sizeConstraints": {
+              "width": "80px",
+              "height": "80px"
+            },
+            "overflowConstraints": {
+              "overflow": "hidden",
+              "overflowX": "hidden",
+              "overflowY": "hidden"
+            }
+          },
+          {
+            "tagName": "DIV",
+            "className": "MuiBox-root mui-j0ozid",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": false,
+            "sizeConstraints": {
+              "width": "260.445px",
+              "height": "80px"
+            },
+            "overflowConstraints": {}
+          },
+          {
+            "tagName": "DIV",
+            "className": "MuiBox-root mui-l1q9gr",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": false,
+            "sizeConstraints": {
+              "width": "429.328px",
+              "height": "99.5px",
+              "minHeight": "72px"
+            },
+            "overflowConstraints": {}
+          },
+          {
+            "tagName": "DIV",
+            "className": "MuiBox-root mui-r8a4jz",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": true,
+            "sizeConstraints": {
+              "width": "437.328px",
+              "height": "446px",
+              "minHeight": "0px"
+            },
+            "overflowConstraints": {
+              "overflow": "hidden auto",
+              "overflowX": "hidden",
+              "overflowY": "auto"
+            }
+          },
+          {
+            "tagName": "DIV",
+            "className": "MuiCardContent-root mui-pdmbyp-MuiCardContent-root",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": false,
+            "sizeConstraints": {
+              "width": "485.328px",
+              "height": "690px",
+              "minHeight": "0px"
+            },
+            "overflowConstraints": {}
+          },
+          {
+            "tagName": "DIV",
+            "className": "MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root mui-19alk1j-MuiPaper-root-MuiCard-root",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": true,
+            "sizeConstraints": {
+              "width": "485.328px",
+              "height": "690px",
+              "minHeight": "0px"
+            },
+            "overflowConstraints": {
+              "overflow": "hidden",
+              "overflowX": "hidden",
+              "overflowY": "hidden"
+            }
+          },
+          {
+            "tagName": "DIV",
+            "className": "MuiBox-root mui-givjnn",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": false,
+            "sizeConstraints": {
+              "width": "485.328px",
+              "height": "754px",
+              "minWidth": "0px",
+              "minHeight": "0px"
+            },
+            "overflowConstraints": {}
+          },
+          {
+            "tagName": "DIV",
+            "className": "MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-4 mui-1fipu0e-MuiGrid-root",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": true,
+            "sizeConstraints": {
+              "width": "509.328px",
+              "height": "778px",
+              "maxWidth": "33.3333%",
+              "maxHeight": "100%"
+            },
+            "overflowConstraints": {
+              "overflow": "hidden",
+              "overflowX": "hidden",
+              "overflowY": "hidden"
+            }
+          },
+          {
+            "tagName": "DIV",
+            "className": "MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-spacing-sm-2 MuiGrid-spacing-md-3 mui-e50bdq-MuiGrid-root",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": true,
+            "sizeConstraints": {
+              "width": "1528px",
+              "height": "778px",
+              "maxHeight": "100%",
+              "minHeight": "0px"
+            },
+            "overflowConstraints": {
+              "overflow": "hidden",
+              "overflowX": "hidden",
+              "overflowY": "hidden"
+            }
+          },
+          {
+            "tagName": "DIV",
+            "className": "MuiBox-root mui-1hswtsr",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": true,
+            "sizeConstraints": {
+              "width": "1504px",
+              "height": "778px",
+              "maxWidth": "1920px",
+              "minWidth": "0px",
+              "minHeight": "0px"
+            },
+            "overflowConstraints": {
+              "overflow": "hidden",
+              "overflowX": "hidden",
+              "overflowY": "hidden"
+            }
+          },
+          {
+            "tagName": "MAIN",
+            "className": "container mx-auto p-2 md:p-4",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": true,
+            "sizeConstraints": {
+              "width": "1536px",
+              "height": "810px",
+              "maxWidth": "1536px"
+            },
+            "overflowConstraints": {
+              "overflow": "hidden",
+              "overflowX": "hidden",
+              "overflowY": "hidden"
+            }
+          },
+          {
+            "tagName": "DIV",
+            "className": "flex flex-col bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark antialiased overflow-hidden",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": true,
+            "sizeConstraints": {
+              "width": "1920px",
+              "height": "1080px",
+              "minWidth": "0px",
+              "minHeight": "0px"
+            },
+            "overflowConstraints": {
+              "overflow": "hidden",
+              "overflowX": "hidden",
+              "overflowY": "hidden"
+            }
+          }
+        ],
+        "has_constraints": true,
+        "image_loaded": true,
+        "has_natural_dimensions": true
+      },
+      {
+        "index": 1,
+        "bounding_box": {
+          "x": 1266.6640625,
+          "y": 547.25,
+          "width": 80,
+          "height": 80
+        },
+        "image_attributes": {
+          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuBlpThoYNHFrLIBRbsVGrd_5ry_K_DKy4UW3m5LLa9pC7TUkGPzbUoDPlDjEWJXEyT1dofOklhP9tCHB-CsyuN5RS6WWvgro8g3-59fx1wRJZE3r8w96hpSAsOv0AdS0OnpJfu07PXrU2GmRu9YA8JYK6nMKs4jNFLy7oihMYa-MU7uZMnRg1UEeQxx54YUPQ_v6hBV2J-VMQ-D7Ehswt9V9gEyyJcuvxUq-8YvcikJLGbyMDMZZMXYrnrDT5tEwLoF9bzLE4hxoUhh",
+          "currentSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuBlpThoYNHFrLIBRbsVGrd_5ry_K_DKy4UW3m5LLa9pC7TUkGPzbUoDPlDjEWJXEyT1dofOklhP9tCHB-CsyuN5RS6WWvgro8g3-59fx1wRJZE3r8w96hpSAsOv0AdS0OnpJfu07PXrU2GmRu9YA8JYK6nMKs4jNFLy7oihMYa-MU7uZMnRg1UEeQxx54YUPQ_v6hBV2J-VMQ-D7Ehswt9V9gEyyJcuvxUq-8YvcikJLGbyMDMZZMXYrnrDT5tEwLoF9bzLE4hxoUhh",
+          "alt": "",
+          "naturalWidth": 512,
+          "naturalHeight": 512,
+          "width": 80,
+          "height": 80,
+          "complete": true,
+          "loading": "auto",
+          "decoding": "auto"
+        },
+        "computed_styles": {
+          "width": "80px",
+          "height": "80px",
+          "maxWidth": "100%",
+          "maxHeight": "none",
+          "minWidth": "auto",
+          "minHeight": "auto",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "display": "block",
+          "position": "static",
+          "overflow": "clip",
+          "visibility": "visible",
+          "opacity": "1",
+          "transform": "none",
+          "borderRadius": "0px",
+          "boxShadow": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "zIndex": "auto"
+        },
+        "parent_info": {
+          "tagName": "DIV",
+          "className": "MuiAvatar-root MuiAvatar-circular mui-17odf8i-MuiAvatar-root",
+          "rect": {
+            "x": 1266.6640625,
+            "y": 547.25,
+            "width": 80,
+            "height": 80
+          },
+          "styles": {
+            "width": "80px",
+            "height": "80px",
+            "maxWidth": "none",
+            "maxHeight": "none",
+            "minWidth": "auto",
+            "minHeight": "auto",
+            "display": "flex",
+            "position": "relative",
+            "overflow": "hidden",
+            "overflowX": "hidden",
+            "overflowY": "hidden",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "padding": "0px",
+            "margin": "0px",
+            "borderRadius": "50%"
+          },
+          "imagePosition": {
+            "x": 0,
+            "y": 0,
+            "width": 80,
+            "height": 80
+          }
+        },
+        "is_clipped": false,
+        "clipping_info": {
+          "right": 0,
+          "left": 0,
+          "bottom": 0,
+          "top": 0
+        },
+        "scale_x": 0.15625,
+        "scale_y": 0.15625,
+        "aspect_ratio_preserved": true,
+        "container_constraints": [
+          {
+            "tagName": "DIV",
+            "className": "MuiAvatar-root MuiAvatar-circular mui-17odf8i-MuiAvatar-root",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": true,
+            "sizeConstraints": {
+              "width": "80px",
+              "height": "80px"
+            },
+            "overflowConstraints": {
+              "overflow": "hidden",
+              "overflowX": "hidden",
+              "overflowY": "hidden"
+            }
+          },
+          {
+            "tagName": "DIV",
+            "className": "MuiBox-root mui-j0ozid",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": false,
+            "sizeConstraints": {
+              "width": "263.766px",
+              "height": "80px"
+            },
+            "overflowConstraints": {}
+          },
+          {
+            "tagName": "DIV",
+            "className": "MuiBox-root mui-l1q9gr",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": false,
+            "sizeConstraints": {
+              "width": "429.328px",
+              "height": "99.5px",
+              "minHeight": "72px"
+            },
+            "overflowConstraints": {}
+          },
+          {
+            "tagName": "DIV",
+            "className": "MuiBox-root mui-r8a4jz",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": true,
+            "sizeConstraints": {
+              "width": "437.328px",
+              "height": "446px",
+              "minHeight": "0px"
+            },
+            "overflowConstraints": {
+              "overflow": "hidden auto",
+              "overflowX": "hidden",
+              "overflowY": "auto"
+            }
+          },
+          {
+            "tagName": "DIV",
+            "className": "MuiCardContent-root mui-pdmbyp-MuiCardContent-root",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": false,
+            "sizeConstraints": {
+              "width": "485.328px",
+              "height": "690px",
+              "minHeight": "0px"
+            },
+            "overflowConstraints": {}
+          },
+          {
+            "tagName": "DIV",
+            "className": "MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root mui-19alk1j-MuiPaper-root-MuiCard-root",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": true,
+            "sizeConstraints": {
+              "width": "485.328px",
+              "height": "690px",
+              "minHeight": "0px"
+            },
+            "overflowConstraints": {
+              "overflow": "hidden",
+              "overflowX": "hidden",
+              "overflowY": "hidden"
+            }
+          },
+          {
+            "tagName": "DIV",
+            "className": "MuiBox-root mui-givjnn",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": false,
+            "sizeConstraints": {
+              "width": "485.328px",
+              "height": "754px",
+              "minWidth": "0px",
+              "minHeight": "0px"
+            },
+            "overflowConstraints": {}
+          },
+          {
+            "tagName": "DIV",
+            "className": "MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-4 mui-1fipu0e-MuiGrid-root",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": true,
+            "sizeConstraints": {
+              "width": "509.328px",
+              "height": "778px",
+              "maxWidth": "33.3333%",
+              "maxHeight": "100%"
+            },
+            "overflowConstraints": {
+              "overflow": "hidden",
+              "overflowX": "hidden",
+              "overflowY": "hidden"
+            }
+          },
+          {
+            "tagName": "DIV",
+            "className": "MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-spacing-sm-2 MuiGrid-spacing-md-3 mui-e50bdq-MuiGrid-root",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": true,
+            "sizeConstraints": {
+              "width": "1528px",
+              "height": "778px",
+              "maxHeight": "100%",
+              "minHeight": "0px"
+            },
+            "overflowConstraints": {
+              "overflow": "hidden",
+              "overflowX": "hidden",
+              "overflowY": "hidden"
+            }
+          },
+          {
+            "tagName": "DIV",
+            "className": "MuiBox-root mui-1hswtsr",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": true,
+            "sizeConstraints": {
+              "width": "1504px",
+              "height": "778px",
+              "maxWidth": "1920px",
+              "minWidth": "0px",
+              "minHeight": "0px"
+            },
+            "overflowConstraints": {
+              "overflow": "hidden",
+              "overflowX": "hidden",
+              "overflowY": "hidden"
+            }
+          },
+          {
+            "tagName": "MAIN",
+            "className": "container mx-auto p-2 md:p-4",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": true,
+            "sizeConstraints": {
+              "width": "1536px",
+              "height": "810px",
+              "maxWidth": "1536px"
+            },
+            "overflowConstraints": {
+              "overflow": "hidden",
+              "overflowX": "hidden",
+              "overflowY": "hidden"
+            }
+          },
+          {
+            "tagName": "DIV",
+            "className": "flex flex-col bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark antialiased overflow-hidden",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": true,
+            "sizeConstraints": {
+              "width": "1920px",
+              "height": "1080px",
+              "minWidth": "0px",
+              "minHeight": "0px"
+            },
+            "overflowConstraints": {
+              "overflow": "hidden",
+              "overflowX": "hidden",
+              "overflowY": "hidden"
+            }
+          }
+        ],
+        "has_constraints": true,
+        "image_loaded": true,
+        "has_natural_dimensions": true
+      },
+      {
+        "index": 2,
+        "bounding_box": {
+          "x": 1266.6640625,
+          "y": 662.75,
+          "width": 80,
+          "height": 80
+        },
+        "image_attributes": {
+          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuAUpv7D5u3r6RUso8r_8tsHd_o9_AlBNWBQAEzg3cLsBBHNSg2r0x7RVZqWqYgLjTAbh26pLigLve5BlXbdsDZHRSv1ZubxGtTVmovTerCEbkFFOG8pklmTgQ8MPmcfXegVn9qoYa_54BVeZebd9tpU2OuWMaAc7wRn86V-XZ5R8znk2BlIRX4UZL0a3nOjUQ7Lriofuyxb6piHJkFPF8JFSBDokLflLYisu0gqU2bJghyZVoG3ryp3TUA4oNOdcT4Co6iZYLkU4AV1",
+          "currentSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuAUpv7D5u3r6RUso8r_8tsHd_o9_AlBNWBQAEzg3cLsBBHNSg2r0x7RVZqWqYgLjTAbh26pLigLve5BlXbdsDZHRSv1ZubxGtTVmovTerCEbkFFOG8pklmTgQ8MPmcfXegVn9qoYa_54BVeZebd9tpU2OuWMaAc7wRn86V-XZ5R8znk2BlIRX4UZL0a3nOjUQ7Lriofuyxb6piHJkFPF8JFSBDokLflLYisu0gqU2bJghyZVoG3ryp3TUA4oNOdcT4Co6iZYLkU4AV1",
+          "alt": "",
+          "naturalWidth": 512,
+          "naturalHeight": 512,
+          "width": 80,
+          "height": 80,
+          "complete": true,
+          "loading": "auto",
+          "decoding": "auto"
+        },
+        "computed_styles": {
+          "width": "80px",
+          "height": "80px",
+          "maxWidth": "100%",
+          "maxHeight": "none",
+          "minWidth": "auto",
+          "minHeight": "auto",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "display": "block",
+          "position": "static",
+          "overflow": "clip",
+          "visibility": "visible",
+          "opacity": "1",
+          "transform": "none",
+          "borderRadius": "0px",
+          "boxShadow": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "zIndex": "auto"
+        },
+        "parent_info": {
+          "tagName": "DIV",
+          "className": "MuiAvatar-root MuiAvatar-circular mui-17odf8i-MuiAvatar-root",
+          "rect": {
+            "x": 1266.6640625,
+            "y": 662.75,
+            "width": 80,
+            "height": 80
+          },
+          "styles": {
+            "width": "80px",
+            "height": "80px",
+            "maxWidth": "none",
+            "maxHeight": "none",
+            "minWidth": "auto",
+            "minHeight": "auto",
+            "display": "flex",
+            "position": "relative",
+            "overflow": "hidden",
+            "overflowX": "hidden",
+            "overflowY": "hidden",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "padding": "0px",
+            "margin": "0px",
+            "borderRadius": "50%"
+          },
+          "imagePosition": {
+            "x": 0,
+            "y": 0,
+            "width": 80,
+            "height": 80
+          }
+        },
+        "is_clipped": false,
+        "clipping_info": {
+          "right": 0,
+          "left": 0,
+          "bottom": 0,
+          "top": 0
+        },
+        "scale_x": 0.15625,
+        "scale_y": 0.15625,
+        "aspect_ratio_preserved": true,
+        "container_constraints": [
+          {
+            "tagName": "DIV",
+            "className": "MuiAvatar-root MuiAvatar-circular mui-17odf8i-MuiAvatar-root",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": true,
+            "sizeConstraints": {
+              "width": "80px",
+              "height": "80px"
+            },
+            "overflowConstraints": {
+              "overflow": "hidden",
+              "overflowX": "hidden",
+              "overflowY": "hidden"
+            }
+          },
+          {
+            "tagName": "DIV",
+            "className": "MuiBox-root mui-j0ozid",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": false,
+            "sizeConstraints": {
+              "width": "292.914px",
+              "height": "80px"
+            },
+            "overflowConstraints": {}
+          },
+          {
+            "tagName": "DIV",
+            "className": "MuiBox-root mui-l1q9gr",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": false,
+            "sizeConstraints": {
+              "width": "429.328px",
+              "height": "99.5px",
+              "minHeight": "72px"
+            },
+            "overflowConstraints": {}
+          },
+          {
+            "tagName": "DIV",
+            "className": "MuiBox-root mui-r8a4jz",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": true,
+            "sizeConstraints": {
+              "width": "437.328px",
+              "height": "446px",
+              "minHeight": "0px"
+            },
+            "overflowConstraints": {
+              "overflow": "hidden auto",
+              "overflowX": "hidden",
+              "overflowY": "auto"
+            }
+          },
+          {
+            "tagName": "DIV",
+            "className": "MuiCardContent-root mui-pdmbyp-MuiCardContent-root",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": false,
+            "sizeConstraints": {
+              "width": "485.328px",
+              "height": "690px",
+              "minHeight": "0px"
+            },
+            "overflowConstraints": {}
+          },
+          {
+            "tagName": "DIV",
+            "className": "MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root mui-19alk1j-MuiPaper-root-MuiCard-root",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": true,
+            "sizeConstraints": {
+              "width": "485.328px",
+              "height": "690px",
+              "minHeight": "0px"
+            },
+            "overflowConstraints": {
+              "overflow": "hidden",
+              "overflowX": "hidden",
+              "overflowY": "hidden"
+            }
+          },
+          {
+            "tagName": "DIV",
+            "className": "MuiBox-root mui-givjnn",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": false,
+            "sizeConstraints": {
+              "width": "485.328px",
+              "height": "754px",
+              "minWidth": "0px",
+              "minHeight": "0px"
+            },
+            "overflowConstraints": {}
+          },
+          {
+            "tagName": "DIV",
+            "className": "MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-4 mui-1fipu0e-MuiGrid-root",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": true,
+            "sizeConstraints": {
+              "width": "509.328px",
+              "height": "778px",
+              "maxWidth": "33.3333%",
+              "maxHeight": "100%"
+            },
+            "overflowConstraints": {
+              "overflow": "hidden",
+              "overflowX": "hidden",
+              "overflowY": "hidden"
+            }
+          },
+          {
+            "tagName": "DIV",
+            "className": "MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-spacing-sm-2 MuiGrid-spacing-md-3 mui-e50bdq-MuiGrid-root",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": true,
+            "sizeConstraints": {
+              "width": "1528px",
+              "height": "778px",
+              "maxHeight": "100%",
+              "minHeight": "0px"
+            },
+            "overflowConstraints": {
+              "overflow": "hidden",
+              "overflowX": "hidden",
+              "overflowY": "hidden"
+            }
+          },
+          {
+            "tagName": "DIV",
+            "className": "MuiBox-root mui-1hswtsr",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": true,
+            "sizeConstraints": {
+              "width": "1504px",
+              "height": "778px",
+              "maxWidth": "1920px",
+              "minWidth": "0px",
+              "minHeight": "0px"
+            },
+            "overflowConstraints": {
+              "overflow": "hidden",
+              "overflowX": "hidden",
+              "overflowY": "hidden"
+            }
+          },
+          {
+            "tagName": "MAIN",
+            "className": "container mx-auto p-2 md:p-4",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": true,
+            "sizeConstraints": {
+              "width": "1536px",
+              "height": "810px",
+              "maxWidth": "1536px"
+            },
+            "overflowConstraints": {
+              "overflow": "hidden",
+              "overflowX": "hidden",
+              "overflowY": "hidden"
+            }
+          },
+          {
+            "tagName": "DIV",
+            "className": "flex flex-col bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark antialiased overflow-hidden",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": true,
+            "sizeConstraints": {
+              "width": "1920px",
+              "height": "1080px",
+              "minWidth": "0px",
+              "minHeight": "0px"
+            },
+            "overflowConstraints": {
+              "overflow": "hidden",
+              "overflowX": "hidden",
+              "overflowY": "hidden"
+            }
+          }
+        ],
+        "has_constraints": true,
+        "image_loaded": true,
+        "has_natural_dimensions": true
+      },
+      {
+        "index": 3,
+        "bounding_box": {
+          "x": 1266.6640625,
+          "y": 778.25,
+          "width": 80,
+          "height": 80
+        },
+        "image_attributes": {
+          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuC3_ukyNZI6oqZ_wWTmUN1YHHLqyt3N0amhgDMS7-K1bL_QznI8ySWdii63nVLOl7CSDfl-GjDWaDr1Ybx52dt_M4QwQwJ1r5OGrJTRo7JwcaOpYimmJDX0JAMXRSsaNSep_mtZP_8vQ_hIqFUF9RLqjn50p853xfTFdgr7GVtRCtf6Ngej8_DanY7iIb2NPbMUy4sdErbwH7B9fs-sbB_tAqSP8lXPClFXSd0tVdFlQylRAWjvsPbJXJp4W6a8-hTDClZWvL0pLnqN",
+          "currentSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuC3_ukyNZI6oqZ_wWTmUN1YHHLqyt3N0amhgDMS7-K1bL_QznI8ySWdii63nVLOl7CSDfl-GjDWaDr1Ybx52dt_M4QwQwJ1r5OGrJTRo7JwcaOpYimmJDX0JAMXRSsaNSep_mtZP_8vQ_hIqFUF9RLqjn50p853xfTFdgr7GVtRCtf6Ngej8_DanY7iIb2NPbMUy4sdErbwH7B9fs-sbB_tAqSP8lXPClFXSd0tVdFlQylRAWjvsPbJXJp4W6a8-hTDClZWvL0pLnqN",
+          "alt": "",
+          "naturalWidth": 512,
+          "naturalHeight": 512,
+          "width": 80,
+          "height": 80,
+          "complete": true,
+          "loading": "auto",
+          "decoding": "auto"
+        },
+        "computed_styles": {
+          "width": "80px",
+          "height": "80px",
+          "maxWidth": "100%",
+          "maxHeight": "none",
+          "minWidth": "auto",
+          "minHeight": "auto",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "display": "block",
+          "position": "static",
+          "overflow": "clip",
+          "visibility": "visible",
+          "opacity": "1",
+          "transform": "none",
+          "borderRadius": "0px",
+          "boxShadow": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "zIndex": "auto"
+        },
+        "parent_info": {
+          "tagName": "DIV",
+          "className": "MuiAvatar-root MuiAvatar-circular mui-17odf8i-MuiAvatar-root",
+          "rect": {
+            "x": 1266.6640625,
+            "y": 778.25,
+            "width": 80,
+            "height": 80
+          },
+          "styles": {
+            "width": "80px",
+            "height": "80px",
+            "maxWidth": "none",
+            "maxHeight": "none",
+            "minWidth": "auto",
+            "minHeight": "auto",
+            "display": "flex",
+            "position": "relative",
+            "overflow": "hidden",
+            "overflowX": "hidden",
+            "overflowY": "hidden",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "padding": "0px",
+            "margin": "0px",
+            "borderRadius": "50%"
+          },
+          "imagePosition": {
+            "x": 0,
+            "y": 0,
+            "width": 80,
+            "height": 80
+          }
+        },
+        "is_clipped": false,
+        "clipping_info": {
+          "right": 0,
+          "left": 0,
+          "bottom": 0,
+          "top": 0
+        },
+        "scale_x": 0.15625,
+        "scale_y": 0.15625,
+        "aspect_ratio_preserved": true,
+        "container_constraints": [
+          {
+            "tagName": "DIV",
+            "className": "MuiAvatar-root MuiAvatar-circular mui-17odf8i-MuiAvatar-root",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": true,
+            "sizeConstraints": {
+              "width": "80px",
+              "height": "80px"
+            },
+            "overflowConstraints": {
+              "overflow": "hidden",
+              "overflowX": "hidden",
+              "overflowY": "hidden"
+            }
+          },
+          {
+            "tagName": "DIV",
+            "className": "MuiBox-root mui-j0ozid",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": false,
+            "sizeConstraints": {
+              "width": "233.461px",
+              "height": "80px"
+            },
+            "overflowConstraints": {}
+          },
+          {
+            "tagName": "DIV",
+            "className": "MuiBox-root mui-l1q9gr",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": false,
+            "sizeConstraints": {
+              "width": "429.328px",
+              "height": "99.5px",
+              "minHeight": "72px"
+            },
+            "overflowConstraints": {}
+          },
+          {
+            "tagName": "DIV",
+            "className": "MuiBox-root mui-r8a4jz",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": true,
+            "sizeConstraints": {
+              "width": "437.328px",
+              "height": "446px",
+              "minHeight": "0px"
+            },
+            "overflowConstraints": {
+              "overflow": "hidden auto",
+              "overflowX": "hidden",
+              "overflowY": "auto"
+            }
+          },
+          {
+            "tagName": "DIV",
+            "className": "MuiCardContent-root mui-pdmbyp-MuiCardContent-root",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": false,
+            "sizeConstraints": {
+              "width": "485.328px",
+              "height": "690px",
+              "minHeight": "0px"
+            },
+            "overflowConstraints": {}
+          },
+          {
+            "tagName": "DIV",
+            "className": "MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root mui-19alk1j-MuiPaper-root-MuiCard-root",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": true,
+            "sizeConstraints": {
+              "width": "485.328px",
+              "height": "690px",
+              "minHeight": "0px"
+            },
+            "overflowConstraints": {
+              "overflow": "hidden",
+              "overflowX": "hidden",
+              "overflowY": "hidden"
+            }
+          },
+          {
+            "tagName": "DIV",
+            "className": "MuiBox-root mui-givjnn",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": false,
+            "sizeConstraints": {
+              "width": "485.328px",
+              "height": "754px",
+              "minWidth": "0px",
+              "minHeight": "0px"
+            },
+            "overflowConstraints": {}
+          },
+          {
+            "tagName": "DIV",
+            "className": "MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-4 mui-1fipu0e-MuiGrid-root",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": true,
+            "sizeConstraints": {
+              "width": "509.328px",
+              "height": "778px",
+              "maxWidth": "33.3333%",
+              "maxHeight": "100%"
+            },
+            "overflowConstraints": {
+              "overflow": "hidden",
+              "overflowX": "hidden",
+              "overflowY": "hidden"
+            }
+          },
+          {
+            "tagName": "DIV",
+            "className": "MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-spacing-sm-2 MuiGrid-spacing-md-3 mui-e50bdq-MuiGrid-root",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": true,
+            "sizeConstraints": {
+              "width": "1528px",
+              "height": "778px",
+              "maxHeight": "100%",
+              "minHeight": "0px"
+            },
+            "overflowConstraints": {
+              "overflow": "hidden",
+              "overflowX": "hidden",
+              "overflowY": "hidden"
+            }
+          },
+          {
+            "tagName": "DIV",
+            "className": "MuiBox-root mui-1hswtsr",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": true,
+            "sizeConstraints": {
+              "width": "1504px",
+              "height": "778px",
+              "maxWidth": "1920px",
+              "minWidth": "0px",
+              "minHeight": "0px"
+            },
+            "overflowConstraints": {
+              "overflow": "hidden",
+              "overflowX": "hidden",
+              "overflowY": "hidden"
+            }
+          },
+          {
+            "tagName": "MAIN",
+            "className": "container mx-auto p-2 md:p-4",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": true,
+            "sizeConstraints": {
+              "width": "1536px",
+              "height": "810px",
+              "maxWidth": "1536px"
+            },
+            "overflowConstraints": {
+              "overflow": "hidden",
+              "overflowX": "hidden",
+              "overflowY": "hidden"
+            }
+          },
+          {
+            "tagName": "DIV",
+            "className": "flex flex-col bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark antialiased overflow-hidden",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": true,
+            "sizeConstraints": {
+              "width": "1920px",
+              "height": "1080px",
+              "minWidth": "0px",
+              "minHeight": "0px"
+            },
+            "overflowConstraints": {
+              "overflow": "hidden",
+              "overflowX": "hidden",
+              "overflowY": "hidden"
+            }
+          }
+        ],
+        "has_constraints": true,
+        "image_loaded": true,
+        "has_natural_dimensions": true
+      },
+      {
+        "index": 4,
+        "bounding_box": {
+          "x": 360,
+          "y": 1008,
+          "width": 48,
+          "height": 48
+        },
+        "image_attributes": {
+          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuBqDTmRxce4NpOUiQPfRpPS1WJWQd12k6KhoO7sxELYV4W9plR-wwRd7QhbJ40kP6dLOdhJgLjC6EeBA8UVOtuqSds0CSebRQZROYruXs3kB89ovRGf_rrKI10amndrMpgNgJ1WYhxxOn87Hihxoc2FZmsRzpO-IvruKEJtOGE-Q-xq8fLX8hyIyLORo9-n39EXbUgEq7THgXM4hNDs4U5FRu1w98jR5Wu37qpEOIZloFkOWVBzR4wvVvHYDJ-DjaBwGdF15HU4F2DJ",
+          "currentSrc": "https://lh3.googleusercontent.com/aida-public/AB6AXuBqDTmRxce4NpOUiQPfRpPS1WJWQd12k6KhoO7sxELYV4W9plR-wwRd7QhbJ40kP6dLOdhJgLjC6EeBA8UVOtuqSds0CSebRQZROYruXs3kB89ovRGf_rrKI10amndrMpgNgJ1WYhxxOn87Hihxoc2FZmsRzpO-IvruKEJtOGE-Q-xq8fLX8hyIyLORo9-n39EXbUgEq7THgXM4hNDs4U5FRu1w98jR5Wu37qpEOIZloFkOWVBzR4wvVvHYDJ-DjaBwGdF15HU4F2DJ",
+          "alt": "",
+          "naturalWidth": 512,
+          "naturalHeight": 512,
+          "width": 48,
+          "height": 48,
+          "complete": true,
+          "loading": "auto",
+          "decoding": "auto"
+        },
+        "computed_styles": {
+          "width": "48px",
+          "height": "48px",
+          "maxWidth": "100%",
+          "maxHeight": "none",
+          "minWidth": "auto",
+          "minHeight": "auto",
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "display": "block",
+          "position": "static",
+          "overflow": "clip",
+          "visibility": "visible",
+          "opacity": "1",
+          "transform": "none",
+          "borderRadius": "0px",
+          "boxShadow": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "zIndex": "auto"
+        },
+        "parent_info": {
+          "tagName": "DIV",
+          "className": "MuiAvatar-root MuiAvatar-circular mui-g6rcdu-MuiAvatar-root",
+          "rect": {
+            "x": 360,
+            "y": 1008,
+            "width": 48,
+            "height": 48
+          },
+          "styles": {
+            "width": "48px",
+            "height": "48px",
+            "maxWidth": "none",
+            "maxHeight": "none",
+            "minWidth": "auto",
+            "minHeight": "auto",
+            "display": "flex",
+            "position": "relative",
+            "overflow": "hidden",
+            "overflowX": "hidden",
+            "overflowY": "hidden",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "padding": "0px",
+            "margin": "0px",
+            "borderRadius": "50%"
+          },
+          "imagePosition": {
+            "x": 0,
+            "y": 0,
+            "width": 48,
+            "height": 48
+          }
+        },
+        "is_clipped": false,
+        "clipping_info": {
+          "right": 0,
+          "left": 0,
+          "bottom": 0,
+          "top": 0
+        },
+        "scale_x": 0.09375,
+        "scale_y": 0.09375,
+        "aspect_ratio_preserved": true,
+        "container_constraints": [
+          {
+            "tagName": "DIV",
+            "className": "MuiAvatar-root MuiAvatar-circular mui-g6rcdu-MuiAvatar-root",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": true,
+            "sizeConstraints": {
+              "width": "48px",
+              "height": "48px"
+            },
+            "overflowConstraints": {
+              "overflow": "hidden",
+              "overflowX": "hidden",
+              "overflowY": "hidden"
+            }
+          },
+          {
+            "tagName": "DIV",
+            "className": "MuiBox-root mui-17aofi3",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": false,
+            "sizeConstraints": {
+              "width": "1200px",
+              "height": "64px",
+              "maxWidth": "1200px",
+              "minWidth": "0px",
+              "minHeight": "0px"
+            },
+            "overflowConstraints": {}
+          },
+          {
+            "tagName": "DIV",
+            "className": "MuiBox-root mui-fp9pgx",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": false,
+            "sizeConstraints": {
+              "width": "1920px",
+              "height": "96px",
+              "minWidth": "0px",
+              "minHeight": "0px"
+            },
+            "overflowConstraints": {}
+          },
+          {
+            "tagName": "DIV",
+            "className": "MuiBox-root mui-1hswtsr",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": true,
+            "sizeConstraints": {
+              "width": "1504px",
+              "height": "778px",
+              "maxWidth": "1920px",
+              "minWidth": "0px",
+              "minHeight": "0px"
+            },
+            "overflowConstraints": {
+              "overflow": "hidden",
+              "overflowX": "hidden",
+              "overflowY": "hidden"
+            }
+          },
+          {
+            "tagName": "MAIN",
+            "className": "container mx-auto p-2 md:p-4",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": true,
+            "sizeConstraints": {
+              "width": "1536px",
+              "height": "810px",
+              "maxWidth": "1536px"
+            },
+            "overflowConstraints": {
+              "overflow": "hidden",
+              "overflowX": "hidden",
+              "overflowY": "hidden"
+            }
+          },
+          {
+            "tagName": "DIV",
+            "className": "flex flex-col bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark antialiased overflow-hidden",
+            "hasSizeConstraints": true,
+            "hasOverflowConstraints": true,
+            "sizeConstraints": {
+              "width": "1920px",
+              "height": "1080px",
+              "minWidth": "0px",
+              "minHeight": "0px"
+            },
+            "overflowConstraints": {
+              "overflow": "hidden",
+              "overflowX": "hidden",
+              "overflowY": "hidden"
+            }
+          }
+        ],
+        "has_constraints": true,
+        "image_loaded": true,
+        "has_natural_dimensions": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,984 @@
+{
+  "timestamp": "2025-10-26T00:04:27.785239",
+  "marcus_avatar_analysis": {
+    "basic_info": {
+      "bounding_box": {
+        "x": 584.5,
+        "y": 48.9921875,
+        "width": 24,
+        "height": 24
+      },
+      "display_width": 24,
+      "display_height": 24,
+      "image_attributes": {
+        "src": "http://localhost:3000/icon.png",
+        "currentSrc": "http://localhost:3000/icon.png",
+        "alt": "LUNALABS Logo",
+        "naturalWidth": 169,
+        "naturalHeight": 169,
+        "width": 24,
+        "height": 24,
+        "complete": true,
+        "loading": "auto",
+        "decoding": "auto"
+      },
+      "computed_styles": {
+        "width": "24px",
+        "height": "24px",
+        "maxWidth": "100%",
+        "maxHeight": "none",
+        "minWidth": "auto",
+        "minHeight": "auto",
+        "objectFit": "fill",
+        "objectPosition": "50% 50%",
+        "display": "block",
+        "position": "static",
+        "overflow": "clip",
+        "visibility": "visible",
+        "opacity": "1",
+        "transform": "none",
+        "borderRadius": "6px"
+      },
+      "scale_x": 0.14201183431952663,
+      "scale_y": 0.14201183431952663,
+      "aspect_ratio_preserved": true,
+      "is_clipped": false,
+      "clipping_details": {
+        "right": 0,
+        "left": 0,
+        "bottom": 0,
+        "top": 0
+      },
+      "image_loaded": true
+    },
+    "parent_analysis": {
+      "containers": [
+        {
+          "level": 0,
+          "tagName": "DIV",
+          "className": "MuiBox-root mui-19aqap1",
+          "id": "",
+          "rect": {
+            "x": 584.5,
+            "y": 44.359375,
+            "width": 123.0234375,
+            "height": 33.2734375
+          },
+          "styles": {
+            "width": "123.023px",
+            "height": "33.2734px",
+            "maxWidth": "none",
+            "maxHeight": "none",
+            "minWidth": "auto",
+            "minHeight": "auto",
+            "display": "flex",
+            "position": "static",
+            "overflow": "visible",
+            "overflowX": "visible",
+            "overflowY": "visible",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "justifyContent": "normal",
+            "padding": "0px",
+            "margin": "0px",
+            "borderRadius": "0px",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "imagePosition": {
+            "x": 0,
+            "y": 4.6328125,
+            "width": 24,
+            "height": 24
+          },
+          "clipsImage": false,
+          "clippingAmount": {
+            "right": 0,
+            "left": 0,
+            "bottom": 0,
+            "top": 0
+          }
+        },
+        {
+          "level": 1,
+          "tagName": "DIV",
+          "className": "MuiBox-root mui-t5ticu",
+          "id": "",
+          "rect": {
+            "x": 560,
+            "y": 16,
+            "width": 800,
+            "height": 90
+          },
+          "styles": {
+            "width": "800px",
+            "height": "90px",
+            "maxWidth": "800px",
+            "maxHeight": "none",
+            "minWidth": "auto",
+            "minHeight": "auto",
+            "display": "flex",
+            "position": "relative",
+            "overflow": "visible",
+            "overflowX": "visible",
+            "overflowY": "visible",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "justifyContent": "space-between",
+            "padding": "12px 12px 12px 24px",
+            "margin": "0px",
+            "borderRadius": "9999px",
+            "backgroundColor": "rgb(255, 255, 255)"
+          },
+          "imagePosition": {
+            "x": 24.5,
+            "y": 32.9921875,
+            "width": 24,
+            "height": 24
+          },
+          "clipsImage": false,
+          "clippingAmount": {
+            "right": 0,
+            "left": 0,
+            "bottom": 0,
+            "top": 0
+          }
+        },
+        {
+          "level": 2,
+          "tagName": "DIV",
+          "className": "MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular mui-7smfc9-MuiToolbar-root",
+          "id": "",
+          "rect": {
+            "x": 0,
+            "y": 16,
+            "width": 1920,
+            "height": 90
+          },
+          "styles": {
+            "width": "1920px",
+            "height": "90px",
+            "maxWidth": "none",
+            "maxHeight": "none",
+            "minWidth": "auto",
+            "minHeight": "64px",
+            "display": "flex",
+            "position": "relative",
+            "overflow": "visible",
+            "overflowX": "visible",
+            "overflowY": "visible",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "padding": "0px 24px",
+            "margin": "0px",
+            "borderRadius": "0px",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "imagePosition": {
+            "x": 584.5,
+            "y": 32.9921875,
+            "width": 24,
+            "height": 24
+          },
+          "clipsImage": false,
+          "clippingAmount": {
+            "right": 0,
+            "left": 0,
+            "bottom": 0,
+            "top": 0
+          }
+        },
+        {
+          "level": 3,
+          "tagName": "HEADER",
+          "className": "MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionSticky mui-1b62wa9-MuiPaper-root-MuiAppBar-root",
+          "id": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 122
+          },
+          "styles": {
+            "width": "1920px",
+            "height": "122px",
+            "maxWidth": "none",
+            "maxHeight": "none",
+            "minWidth": "auto",
+            "minHeight": "auto",
+            "display": "flex",
+            "position": "sticky",
+            "overflow": "visible",
+            "overflowX": "visible",
+            "overflowY": "visible",
+            "flexDirection": "column",
+            "alignItems": "normal",
+            "justifyContent": "normal",
+            "padding": "16px 0px",
+            "margin": "0px",
+            "borderRadius": "0px",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          },
+          "imagePosition": {
+            "x": 584.5,
+            "y": 48.9921875,
+            "width": 24,
+            "height": 24
+          },
+          "clipsImage": false,
+          "clippingAmount": {
+            "right": 0,
+            "left": 0,
+            "bottom": 0,
+            "top": 0
+          }
+        },
+        {
+          "level": 4,
+          "tagName": "DIV",
+          "className": "flex flex-col bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark antialiased overflow-hidden",
+          "id": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 1080
+          },
+          "styles": {
+            "width": "1920px",
+            "height": "1080px",
+            "maxWidth": "none",
+            "maxHeight": "none",
+            "minWidth": "0px",
+            "minHeight": "0px",
+            "display": "flex",
+            "position": "static",
+            "overflow": "hidden",
+            "overflowX": "hidden",
+            "overflowY": "hidden",
+            "flexDirection": "column",
+            "alignItems": "normal",
+            "justifyContent": "normal",
+            "padding": "0px",
+            "margin": "0px",
+            "borderRadius": "0px",
+            "backgroundColor": "rgb(249, 249, 249)"
+          },
+          "imagePosition": {
+            "x": 584.5,
+            "y": 48.9921875,
+            "width": 24,
+            "height": 24
+          },
+          "clipsImage": false,
+          "clippingAmount": {
+            "right": 0,
+            "left": 0,
+            "bottom": 0,
+            "top": 0
+          }
+        }
+      ],
+      "total_levels": 5,
+      "clipping_containers": []
+    },
+    "layout_analysis": {
+      "found": true,
+      "bounding_box": {
+        "x": 584.5,
+        "y": 44.359375,
+        "width": 123.0234375,
+        "height": 33.2734375
+      },
+      "styles": {
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "justifyContent": "normal",
+        "gap": "12px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "avatar_position": {
+        "x": 0,
+        "y": 4.6328125,
+        "width": 24,
+        "height": 24
+      },
+      "position_ratio": {
+        "x": 0,
+        "y": 0.13923456210378024,
+        "width": 0.19508477805296248,
+        "height": 0.7212960788917586
+      }
+    },
+    "render_analysis": {
+      "forced_reflow_time": 0.19999998807907104,
+      "image_composite": "auto",
+      "has_transform": false,
+      "has_opacity_change": false,
+      "is_accelerated": false
+    },
+    "constraints_analysis": {
+      "constraining_containers": [
+        {
+          "tagName": "DIV",
+          "className": "MuiBox-root mui-19aqap1",
+          "level": 1,
+          "size_constraints": {
+            "width": "123.023px",
+            "height": "33.2734px"
+          },
+          "overflow_constraints": {},
+          "layout_constraints": {
+            "display": "flex",
+            "position": "static",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "justifyContent": "normal"
+          },
+          "visual_constraints": {
+            "borderRadius": "0px",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "zIndex": "auto"
+          }
+        },
+        {
+          "tagName": "DIV",
+          "className": "MuiBox-root mui-t5ticu",
+          "level": 2,
+          "size_constraints": {
+            "width": "800px",
+            "height": "90px",
+            "maxWidth": "800px"
+          },
+          "overflow_constraints": {},
+          "layout_constraints": {
+            "display": "flex",
+            "position": "relative",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "justifyContent": "space-between"
+          },
+          "visual_constraints": {
+            "borderRadius": "9999px",
+            "boxShadow": "rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+            "backgroundColor": "rgb(255, 255, 255)",
+            "zIndex": "auto"
+          }
+        },
+        {
+          "tagName": "DIV",
+          "className": "MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular mui-7smfc9-MuiToolbar-root",
+          "level": 3,
+          "size_constraints": {
+            "width": "1920px",
+            "height": "90px",
+            "minHeight": "64px"
+          },
+          "overflow_constraints": {},
+          "layout_constraints": {
+            "display": "flex",
+            "position": "relative",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "justifyContent": "center"
+          },
+          "visual_constraints": {
+            "borderRadius": "0px",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "zIndex": "auto"
+          }
+        },
+        {
+          "tagName": "HEADER",
+          "className": "MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionSticky mui-1b62wa9-MuiPaper-root-MuiAppBar-root",
+          "level": 4,
+          "size_constraints": {
+            "width": "1920px",
+            "height": "122px"
+          },
+          "overflow_constraints": {},
+          "layout_constraints": {
+            "display": "flex",
+            "position": "sticky",
+            "flexDirection": "column",
+            "alignItems": "normal",
+            "justifyContent": "normal"
+          },
+          "visual_constraints": {
+            "borderRadius": "0px",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "zIndex": "1100"
+          }
+        },
+        {
+          "tagName": "DIV",
+          "className": "flex flex-col bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark antialiased overflow-hidden",
+          "level": 5,
+          "size_constraints": {
+            "width": "1920px",
+            "height": "1080px",
+            "minWidth": "0px",
+            "minHeight": "0px"
+          },
+          "overflow_constraints": {
+            "overflow": "hidden",
+            "overflowX": "hidden",
+            "overflowY": "hidden"
+          },
+          "layout_constraints": {
+            "display": "flex",
+            "position": "static",
+            "flexDirection": "column",
+            "alignItems": "normal",
+            "justifyContent": "normal"
+          },
+          "visual_constraints": {
+            "borderRadius": "0px",
+            "backgroundColor": "rgb(249, 249, 249)",
+            "zIndex": "auto"
+          }
+        }
+      ],
+      "total_constraints": 5,
+      "has_strong_constraints": true
+    },
+    "visual_analysis": {
+      "border_radius": "6px",
+      "box_shadow": "none",
+      "opacity": "1",
+      "visibility": "visible",
+      "backdrop_filter": "none",
+      "filter": "none",
+      "mix_blend_mode": "normal",
+      "isolation": "auto",
+      "actual_border_radius": {
+        "top_left": 6,
+        "top_right": 6,
+        "bottom_left": 6,
+        "bottom_right": 6
+      },
+      "is_circular": true
+    },
+    "analysis_timestamp": "2025-10-26T00:04:27.585558"
+  },
+  "report": {
+    "status": "completed",
+    "summary": {
+      "avatar_size": "24 x 24 px",
+      "original_size": "169 x 169 px",
+      "scale_factor": "0.142x",
+      "object_fit": "fill",
+      "is_clipped": false,
+      "aspect_ratio_preserved": true,
+      "image_loaded": true,
+      "parent_containers": 5,
+      "clipping_containers": 0,
+      "constraint_containers": 5
+    },
+    "issues_found": [
+      {
+        "type": "constraints",
+        "severity": "medium",
+        "description": "头像受到多层强约束",
+        "details": "共 5 个约束容器"
+      }
+    ],
+    "recommendations": [
+      {
+        "priority": "medium",
+        "category": "optimize_display",
+        "title": "优化 Marcus 头像显示效果",
+        "steps": [
+          "确保 object-fit: cover 或 contain 设置正确",
+          "验证父容器的尺寸设置合理",
+          "考虑使用 CSS 变量统一头像尺寸",
+          "添加头像加载状态指示器"
+        ]
+      },
+      {
+        "priority": "low",
+        "category": "enhance_performance",
+        "title": "增强渲染性能",
+        "steps": [
+          "考虑使用 CSS will-change 属性优化动画",
+          "确保图片使用适当的格式和尺寸",
+          "实现图片懒加载（如果适用）",
+          "添加图片缓存策略"
+        ]
+      }
+    ],
+    "technical_details": {
+      "basic_info": {
+        "bounding_box": {
+          "x": 584.5,
+          "y": 48.9921875,
+          "width": 24,
+          "height": 24
+        },
+        "display_width": 24,
+        "display_height": 24,
+        "image_attributes": {
+          "src": "http://localhost:3000/icon.png",
+          "currentSrc": "http://localhost:3000/icon.png",
+          "alt": "LUNALABS Logo",
+          "naturalWidth": 169,
+          "naturalHeight": 169,
+          "width": 24,
+          "height": 24,
+          "complete": true,
+          "loading": "auto",
+          "decoding": "auto"
+        },
+        "computed_styles": {
+          "width": "24px",
+          "height": "24px",
+          "maxWidth": "100%",
+          "maxHeight": "none",
+          "minWidth": "auto",
+          "minHeight": "auto",
+          "objectFit": "fill",
+          "objectPosition": "50% 50%",
+          "display": "block",
+          "position": "static",
+          "overflow": "clip",
+          "visibility": "visible",
+          "opacity": "1",
+          "transform": "none",
+          "borderRadius": "6px"
+        },
+        "scale_x": 0.14201183431952663,
+        "scale_y": 0.14201183431952663,
+        "aspect_ratio_preserved": true,
+        "is_clipped": false,
+        "clipping_details": {
+          "right": 0,
+          "left": 0,
+          "bottom": 0,
+          "top": 0
+        },
+        "image_loaded": true
+      },
+      "parent_analysis": {
+        "containers": [
+          {
+            "level": 0,
+            "tagName": "DIV",
+            "className": "MuiBox-root mui-19aqap1",
+            "id": "",
+            "rect": {
+              "x": 584.5,
+              "y": 44.359375,
+              "width": 123.0234375,
+              "height": 33.2734375
+            },
+            "styles": {
+              "width": "123.023px",
+              "height": "33.2734px",
+              "maxWidth": "none",
+              "maxHeight": "none",
+              "minWidth": "auto",
+              "minHeight": "auto",
+              "display": "flex",
+              "position": "static",
+              "overflow": "visible",
+              "overflowX": "visible",
+              "overflowY": "visible",
+              "flexDirection": "row",
+              "alignItems": "center",
+              "justifyContent": "normal",
+              "padding": "0px",
+              "margin": "0px",
+              "borderRadius": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "imagePosition": {
+              "x": 0,
+              "y": 4.6328125,
+              "width": 24,
+              "height": 24
+            },
+            "clipsImage": false,
+            "clippingAmount": {
+              "right": 0,
+              "left": 0,
+              "bottom": 0,
+              "top": 0
+            }
+          },
+          {
+            "level": 1,
+            "tagName": "DIV",
+            "className": "MuiBox-root mui-t5ticu",
+            "id": "",
+            "rect": {
+              "x": 560,
+              "y": 16,
+              "width": 800,
+              "height": 90
+            },
+            "styles": {
+              "width": "800px",
+              "height": "90px",
+              "maxWidth": "800px",
+              "maxHeight": "none",
+              "minWidth": "auto",
+              "minHeight": "auto",
+              "display": "flex",
+              "position": "relative",
+              "overflow": "visible",
+              "overflowX": "visible",
+              "overflowY": "visible",
+              "flexDirection": "row",
+              "alignItems": "center",
+              "justifyContent": "space-between",
+              "padding": "12px 12px 12px 24px",
+              "margin": "0px",
+              "borderRadius": "9999px",
+              "backgroundColor": "rgb(255, 255, 255)"
+            },
+            "imagePosition": {
+              "x": 24.5,
+              "y": 32.9921875,
+              "width": 24,
+              "height": 24
+            },
+            "clipsImage": false,
+            "clippingAmount": {
+              "right": 0,
+              "left": 0,
+              "bottom": 0,
+              "top": 0
+            }
+          },
+          {
+            "level": 2,
+            "tagName": "DIV",
+            "className": "MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular mui-7smfc9-MuiToolbar-root",
+            "id": "",
+            "rect": {
+              "x": 0,
+              "y": 16,
+              "width": 1920,
+              "height": 90
+            },
+            "styles": {
+              "width": "1920px",
+              "height": "90px",
+              "maxWidth": "none",
+              "maxHeight": "none",
+              "minWidth": "auto",
+              "minHeight": "64px",
+              "display": "flex",
+              "position": "relative",
+              "overflow": "visible",
+              "overflowX": "visible",
+              "overflowY": "visible",
+              "flexDirection": "row",
+              "alignItems": "center",
+              "justifyContent": "center",
+              "padding": "0px 24px",
+              "margin": "0px",
+              "borderRadius": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "imagePosition": {
+              "x": 584.5,
+              "y": 32.9921875,
+              "width": 24,
+              "height": 24
+            },
+            "clipsImage": false,
+            "clippingAmount": {
+              "right": 0,
+              "left": 0,
+              "bottom": 0,
+              "top": 0
+            }
+          },
+          {
+            "level": 3,
+            "tagName": "HEADER",
+            "className": "MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionSticky mui-1b62wa9-MuiPaper-root-MuiAppBar-root",
+            "id": "",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 1920,
+              "height": 122
+            },
+            "styles": {
+              "width": "1920px",
+              "height": "122px",
+              "maxWidth": "none",
+              "maxHeight": "none",
+              "minWidth": "auto",
+              "minHeight": "auto",
+              "display": "flex",
+              "position": "sticky",
+              "overflow": "visible",
+              "overflowX": "visible",
+              "overflowY": "visible",
+              "flexDirection": "column",
+              "alignItems": "normal",
+              "justifyContent": "normal",
+              "padding": "16px 0px",
+              "margin": "0px",
+              "borderRadius": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)"
+            },
+            "imagePosition": {
+              "x": 584.5,
+              "y": 48.9921875,
+              "width": 24,
+              "height": 24
+            },
+            "clipsImage": false,
+            "clippingAmount": {
+              "right": 0,
+              "left": 0,
+              "bottom": 0,
+              "top": 0
+            }
+          },
+          {
+            "level": 4,
+            "tagName": "DIV",
+            "className": "flex flex-col bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark antialiased overflow-hidden",
+            "id": "",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 1920,
+              "height": 1080
+            },
+            "styles": {
+              "width": "1920px",
+              "height": "1080px",
+              "maxWidth": "none",
+              "maxHeight": "none",
+              "minWidth": "0px",
+              "minHeight": "0px",
+              "display": "flex",
+              "position": "static",
+              "overflow": "hidden",
+              "overflowX": "hidden",
+              "overflowY": "hidden",
+              "flexDirection": "column",
+              "alignItems": "normal",
+              "justifyContent": "normal",
+              "padding": "0px",
+              "margin": "0px",
+              "borderRadius": "0px",
+              "backgroundColor": "rgb(249, 249, 249)"
+            },
+            "imagePosition": {
+              "x": 584.5,
+              "y": 48.9921875,
+              "width": 24,
+              "height": 24
+            },
+            "clipsImage": false,
+            "clippingAmount": {
+              "right": 0,
+              "left": 0,
+              "bottom": 0,
+              "top": 0
+            }
+          }
+        ],
+        "total_levels": 5,
+        "clipping_containers": []
+      },
+      "layout_analysis": {
+        "found": true,
+        "bounding_box": {
+          "x": 584.5,
+          "y": 44.359375,
+          "width": 123.0234375,
+          "height": 33.2734375
+        },
+        "styles": {
+          "display": "flex",
+          "flexDirection": "row",
+          "alignItems": "center",
+          "justifyContent": "normal",
+          "gap": "12px",
+          "padding": "0px",
+          "position": "static"
+        },
+        "avatar_position": {
+          "x": 0,
+          "y": 4.6328125,
+          "width": 24,
+          "height": 24
+        },
+        "position_ratio": {
+          "x": 0,
+          "y": 0.13923456210378024,
+          "width": 0.19508477805296248,
+          "height": 0.7212960788917586
+        }
+      },
+      "render_analysis": {
+        "forced_reflow_time": 0.19999998807907104,
+        "image_composite": "auto",
+        "has_transform": false,
+        "has_opacity_change": false,
+        "is_accelerated": false
+      },
+      "constraints_analysis": {
+        "constraining_containers": [
+          {
+            "tagName": "DIV",
+            "className": "MuiBox-root mui-19aqap1",
+            "level": 1,
+            "size_constraints": {
+              "width": "123.023px",
+              "height": "33.2734px"
+            },
+            "overflow_constraints": {},
+            "layout_constraints": {
+              "display": "flex",
+              "position": "static",
+              "flexDirection": "row",
+              "alignItems": "center",
+              "justifyContent": "normal"
+            },
+            "visual_constraints": {
+              "borderRadius": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "zIndex": "auto"
+            }
+          },
+          {
+            "tagName": "DIV",
+            "className": "MuiBox-root mui-t5ticu",
+            "level": 2,
+            "size_constraints": {
+              "width": "800px",
+              "height": "90px",
+              "maxWidth": "800px"
+            },
+            "overflow_constraints": {},
+            "layout_constraints": {
+              "display": "flex",
+              "position": "relative",
+              "flexDirection": "row",
+              "alignItems": "center",
+              "justifyContent": "space-between"
+            },
+            "visual_constraints": {
+              "borderRadius": "9999px",
+              "boxShadow": "rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+              "backgroundColor": "rgb(255, 255, 255)",
+              "zIndex": "auto"
+            }
+          },
+          {
+            "tagName": "DIV",
+            "className": "MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular mui-7smfc9-MuiToolbar-root",
+            "level": 3,
+            "size_constraints": {
+              "width": "1920px",
+              "height": "90px",
+              "minHeight": "64px"
+            },
+            "overflow_constraints": {},
+            "layout_constraints": {
+              "display": "flex",
+              "position": "relative",
+              "flexDirection": "row",
+              "alignItems": "center",
+              "justifyContent": "center"
+            },
+            "visual_constraints": {
+              "borderRadius": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "zIndex": "auto"
+            }
+          },
+          {
+            "tagName": "HEADER",
+            "className": "MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionSticky mui-1b62wa9-MuiPaper-root-MuiAppBar-root",
+            "level": 4,
+            "size_constraints": {
+              "width": "1920px",
+              "height": "122px"
+            },
+            "overflow_constraints": {},
+            "layout_constraints": {
+              "display": "flex",
+              "position": "sticky",
+              "flexDirection": "column",
+              "alignItems": "normal",
+              "justifyContent": "normal"
+            },
+            "visual_constraints": {
+              "borderRadius": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "zIndex": "1100"
+            }
+          },
+          {
+            "tagName": "DIV",
+            "className": "flex flex-col bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark antialiased overflow-hidden",
+            "level": 5,
+            "size_constraints": {
+              "width": "1920px",
+              "height": "1080px",
+              "minWidth": "0px",
+              "minHeight": "0px"
+            },
+            "overflow_constraints": {
+              "overflow": "hidden",
+              "overflowX": "hidden",
+              "overflowY": "hidden"
+            },
+            "layout_constraints": {
+              "display": "flex",
+              "position": "static",
+              "flexDirection": "column",
+              "alignItems": "normal",
+              "justifyContent": "normal"
+            },
+            "visual_constraints": {
+              "borderRadius": "0px",
+              "backgroundColor": "rgb(249, 249, 249)",
+              "zIndex": "auto"
+            }
+          }
+        ],
+        "total_constraints": 5,
+        "has_strong_constraints": true
+      },
+      "visual_analysis": {
+        "border_radius": "6px",
+        "box_shadow": "none",
+        "opacity": "1",
+        "visibility": "visible",
+        "backdrop_filter": "none",
+        "filter": "none",
+        "mix_blend_mode": "normal",
+        "isolation": "auto",
+        "actual_border_radius": {
+          "top_left": 6,
+          "top_right": 6,
+          "bottom_left": 6,
+          "bottom_right": 6
+        },
+        "is_circular": true
+      },
+      "analysis_timestamp": "2025-10-26T00:04:27.585558"
+    }
+  },
+  "analysis_context": {
+    "page_url": "http://localhost:3000/",
+    "page_title": "LUNALABS - AI Voice Synthesis",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    }
+  }
+}

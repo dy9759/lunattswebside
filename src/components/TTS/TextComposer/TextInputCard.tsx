@@ -36,34 +36,34 @@ export default function TextInputCard({ text, onTextChange }: TextInputCardProps
       >
         <TextField
           multiline
-          rows={4} // 设置合理的最小行数
-          maxRows={12} // 设置最大行数限制
           fullWidth
           placeholder="Enter your text here to generate natural, expressive speech. Our AI brings your words to life!"
           value={text}
           onChange={(e) => onTextChange(e.target.value)}
           variant="standard"
           sx={{
-            flexGrow: 1, // 让 TextField 填充 CardContent 剩余空间
+            flexGrow: 1, // 完全填充剩余空间
             display: 'flex',
             flexDirection: 'column',
-            // 限制TextField最大高度
-            maxHeight: '300px', // 设置最大高度限制
+            minHeight: 160, // 设置合理的最小高度
+            // 完全自适应 - 不设置固定高度限制
           }}
           InputProps={{
             disableUnderline: true,
             sx: {
               fontSize: '1rem',
               lineHeight: 1.4,
-              flexGrow: 1, // 让输入区域填充 TextField 空间
+              flexGrow: 1, // 让输入区域完全填充
               display: 'flex',
               flexDirection: 'column',
-              // textarea关键修复
+              height: '100%', // 确保填充父容器高度
               '& textarea': {
                 resize: 'none',
-                overflowY: 'auto', // 允许滚动
-                maxHeight: '280px', // 限制textarea最大高度
+                overflowY: 'auto',
                 boxSizing: 'border-box',
+                height: '100% !important', // 强制填充父容器
+                minHeight: '120px', // 最小高度确保可用性
+                // 自适应高度关键 - 移除固定高度，让内容决定
                 // 美观的滚动条样式
                 '&::-webkit-scrollbar': {
                   width: '6px',
@@ -84,15 +84,15 @@ export default function TextInputCard({ text, onTextChange }: TextInputCardProps
           }}
         />
 
-        {/* 字符计数和范例按钮区域 */}
+        {/* 字符计数和范例按钮区域 - 精确24px间距 */}
         <Box sx={{
           display: 'flex',
           alignItems: 'center',
-          justifyContent: 'flex-start', // 改为左对齐
-          gap: 2, // 元素之间的间距
-          mt: 2,
+          justifyContent: 'flex-start',
+          gap: 2,
           px: 0.5,
-          flexShrink: 0, // 防止被压缩
+          flexShrink: 0,
+          mt: 3, // 精确24px上边距 (8px × 3 = 24px)
         }}>
           <CharCounter currentLength={text.length} maxLength={500} />
           <SampleButton />

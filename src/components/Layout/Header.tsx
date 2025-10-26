@@ -111,7 +111,7 @@ const Header = () => {
                 py: 0.8,
                 borderRadius: '20px',
                 textTransform: 'none',
-                fontSize: '14px',
+                fontSize: '18px',
                 minWidth: 'auto',
                 '&:hover': {
                   backgroundColor: alpha(theme.palette.primary.main, 0.1),
@@ -131,7 +131,7 @@ const Header = () => {
                 py: 0.8,
                 borderRadius: '20px',
                 textTransform: 'none',
-                fontSize: '14px',
+                fontSize: '18px',
                 minWidth: 'auto',
                 '&:hover': {
                   color: theme.palette.textLight.main,
@@ -152,7 +152,7 @@ const Header = () => {
                 py: 0.8,
                 borderRadius: '20px',
                 textTransform: 'none',
-                fontSize: '14px',
+                fontSize: '18px',
                 minWidth: 'auto',
                 '&:hover': {
                   color: theme.palette.textLight.main,

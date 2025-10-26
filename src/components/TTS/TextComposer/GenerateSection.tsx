@@ -19,9 +19,10 @@ export default function GenerateSection({
     <Box
       sx={{
         display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'flex-end',
-        gap: 1,
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'flex-end',
+        gap: 2,
         flexShrink: 0, // 防止被压缩
         marginTop: 'auto', // 推到底部
       }}

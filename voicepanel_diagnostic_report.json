@@ -1,0 +1,315 @@
+{
+  "timestamp": "2025-10-26T00:01:37.297976",
+  "page_info": {
+    "title": "LUNALABS - AI Voice Synthesis",
+    "url": "http://localhost:3000/"
+  },
+  "panel_info": {
+    "selector_used": "[class*=\"card\"]",
+    "bounding_box": {
+      "x": 184,
+      "y": 114,
+      "width": 1018.6640625,
+      "height": 778
+    }
+  },
+  "analysis_results": [
+    {
+      "index": 0,
+      "bounding_box": {
+        "x": 184,
+        "y": 114,
+        "width": 1018.6640625,
+        "height": 778
+      },
+      "computed_styles": {
+        "width": "1018.66px",
+        "height": "778px",
+        "maxWidth": "66.6667%",
+        "maxHeight": "none",
+        "minWidth": "auto",
+        "minHeight": "auto",
+        "display": "block",
+        "position": "static",
+        "overflow": "visible",
+        "overflowX": "visible",
+        "overflowY": "visible",
+        "textOverflow": "clip",
+        "whiteSpace": "normal",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "padding": "24px 0px 0px 24px",
+        "margin": "0px",
+        "border": "0px solid rgb(24, 24, 27)",
+        "borderRadius": "0px",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "zIndex": "auto"
+      },
+      "text_preview": "Text to Speech0 / 500 charactersSample Sentences10 generations remaining todayGenerate",
+      "avatar_info": null,
+      "clipping_analysis": {
+        "parent_rect": {
+          "x": 184,
+          "y": 114,
+          "width": 1018.6640625,
+          "height": 778,
+          "top": 114,
+          "right": 1202.6640625,
+          "bottom": 892,
+          "left": 184
+        },
+        "parent_style": {
+          "overflow": "visible",
+          "overflowX": "visible",
+          "overflowY": "visible",
+          "position": "static",
+          "display": "block"
+        },
+        "total_children": 1,
+        "clipped_children": 0,
+        "clipped_elements": []
+      },
+      "children_info": [
+        {
+          "index": 0,
+          "tag_name": "DIV",
+          "class_name": "MuiBox-root mui-teqrjg",
+          "id": "",
+          "is_image": false,
+          "has_text": true
+        }
+      ],
+      "has_clipping": false,
+      "has_avatar": false
+    },
+    {
+      "index": 2,
+      "bounding_box": {
+        "x": 1868,
+        "y": 1028,
+        "width": 36,
+        "height": 36
+      },
+      "computed_styles": {
+        "width": "36px",
+        "height": "36px",
+        "maxWidth": "none",
+        "maxHeight": "none",
+        "minWidth": "0px",
+        "minHeight": "0px",
+        "display": "flex",
+        "position": "fixed",
+        "overflow": "visible",
+        "overflowX": "visible",
+        "overflowY": "visible",
+        "textOverflow": "clip",
+        "whiteSpace": "normal",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "alignItems": "center",
+        "padding": "0px",
+        "margin": "0px",
+        "border": "1px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.15)",
+        "borderRadius": "1.67772e+07px",
+        "backgroundColor": "rgb(0, 0, 0)",
+        "zIndex": "2147483647"
+      },
+      "text_preview": "W",
+      "avatar_info": null,
+      "clipping_analysis": {
+        "parent_rect": {
+          "x": 1868,
+          "y": 1028,
+          "width": 36,
+          "height": 36,
+          "top": 1028,
+          "right": 1904,
+          "bottom": 1064,
+          "left": 1868
+        },
+        "parent_style": {
+          "overflow": "visible",
+          "overflowX": "visible",
+          "overflowY": "visible",
+          "position": "fixed",
+          "display": "flex"
+        },
+        "total_children": 0,
+        "clipped_children": 0,
+        "clipped_elements": []
+      },
+      "children_info": [],
+      "has_clipping": false,
+      "has_avatar": false
+    }
+  ],
+  "summary": {
+    "status": "completed",
+    "statistics": {
+      "total_cards": 2,
+      "cards_with_clipping": 0,
+      "cards_with_avatar": 0,
+      "total_clipped_elements": 0
+    },
+    "issues_identified": {
+      "clipping_issues": false,
+      "avatar_issues": false,
+      "clipping_types": {
+        "horizontal": 0,
+        "vertical": 0,
+        "both": 0
+      },
+      "avatar_issues_detail": {
+        "scaled_incorrectly": 0,
+        "overflow_parent": 0,
+        "constrained": 0
+      }
+    },
+    "recommendations": [
+      {
+        "priority": "medium",
+        "category": "general",
+        "issue": "布局优化建议",
+        "solutions": [
+          "使用现代 CSS Grid 或 Flexbox 布局",
+          "设置合理的容器最小尺寸",
+          "使用 CSS 变量统一尺寸管理",
+          "添加响应式设计断点",
+          "考虑使用 CSS contain 属性优化性能"
+        ]
+      }
+    ],
+    "detailed_analysis": [
+      {
+        "index": 0,
+        "bounding_box": {
+          "x": 184,
+          "y": 114,
+          "width": 1018.6640625,
+          "height": 778
+        },
+        "computed_styles": {
+          "width": "1018.66px",
+          "height": "778px",
+          "maxWidth": "66.6667%",
+          "maxHeight": "none",
+          "minWidth": "auto",
+          "minHeight": "auto",
+          "display": "block",
+          "position": "static",
+          "overflow": "visible",
+          "overflowX": "visible",
+          "overflowY": "visible",
+          "textOverflow": "clip",
+          "whiteSpace": "normal",
+          "flexDirection": "row",
+          "justifyContent": "normal",
+          "alignItems": "normal",
+          "padding": "24px 0px 0px 24px",
+          "margin": "0px",
+          "border": "0px solid rgb(24, 24, 27)",
+          "borderRadius": "0px",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "zIndex": "auto"
+        },
+        "text_preview": "Text to Speech0 / 500 charactersSample Sentences10 generations remaining todayGenerate",
+        "avatar_info": null,
+        "clipping_analysis": {
+          "parent_rect": {
+            "x": 184,
+            "y": 114,
+            "width": 1018.6640625,
+            "height": 778,
+            "top": 114,
+            "right": 1202.6640625,
+            "bottom": 892,
+            "left": 184
+          },
+          "parent_style": {
+            "overflow": "visible",
+            "overflowX": "visible",
+            "overflowY": "visible",
+            "position": "static",
+            "display": "block"
+          },
+          "total_children": 1,
+          "clipped_children": 0,
+          "clipped_elements": []
+        },
+        "children_info": [
+          {
+            "index": 0,
+            "tag_name": "DIV",
+            "class_name": "MuiBox-root mui-teqrjg",
+            "id": "",
+            "is_image": false,
+            "has_text": true
+          }
+        ],
+        "has_clipping": false,
+        "has_avatar": false
+      },
+      {
+        "index": 2,
+        "bounding_box": {
+          "x": 1868,
+          "y": 1028,
+          "width": 36,
+          "height": 36
+        },
+        "computed_styles": {
+          "width": "36px",
+          "height": "36px",
+          "maxWidth": "none",
+          "maxHeight": "none",
+          "minWidth": "0px",
+          "minHeight": "0px",
+          "display": "flex",
+          "position": "fixed",
+          "overflow": "visible",
+          "overflowX": "visible",
+          "overflowY": "visible",
+          "textOverflow": "clip",
+          "whiteSpace": "normal",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "padding": "0px",
+          "margin": "0px",
+          "border": "1px solid oklab(0.999994 0.0000455678 0.0000200868 / 0.15)",
+          "borderRadius": "1.67772e+07px",
+          "backgroundColor": "rgb(0, 0, 0)",
+          "zIndex": "2147483647"
+        },
+        "text_preview": "W",
+        "avatar_info": null,
+        "clipping_analysis": {
+          "parent_rect": {
+            "x": 1868,
+            "y": 1028,
+            "width": 36,
+            "height": 36,
+            "top": 1028,
+            "right": 1904,
+            "bottom": 1064,
+            "left": 1868
+          },
+          "parent_style": {
+            "overflow": "visible",
+            "overflowX": "visible",
+            "overflowY": "visible",
+            "position": "fixed",
+            "display": "flex"
+          },
+          "total_children": 0,
+          "clipped_children": 0,
+          "clipped_elements": []
+        },
+        "children_info": [],
+        "has_clipping": false,
+        "has_avatar": false
+      }
+    ]
+  }
+}

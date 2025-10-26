@@ -72,11 +72,12 @@ export default function MainVoiceDisplay({ voice, isSelected, onClick }: MainVoi
           position: 'relative',
           zIndex: 3,
           p: 3,
+          width: '100%',
+          aspectRatio: '2 / 1', // 宽高比2:1，高度为宽度的一半
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'space-between',
-          height: '100%',
-          minHeight: 150,
+          minHeight: 120, // 确保最小可用高度
         }}
       >
         {/* 顶部内容 */}
@@ -88,7 +89,8 @@ export default function MainVoiceDisplay({ voice, isSelected, onClick }: MainVoi
               color: 'white',
               borderRadius: 1,
               p: 1,
-              textAlign: 'right'
+              textAlign: 'left',
+              fontSize: '18px'
             }}
           >
             {voice.name}
@@ -98,8 +100,9 @@ export default function MainVoiceDisplay({ voice, isSelected, onClick }: MainVoi
             sx={{
               color: 'white',
               borderRadius: 1,
-              p: 0.5,
-              textAlign: 'right'
+              p: 1, // 8px padding (MUI spacing: 8px × 1 = 8px)
+              textAlign: 'left',
+              fontSize: '12px'
             }}
           >
             {voice.description}

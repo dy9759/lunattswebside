@@ -24,13 +24,13 @@ export default function VoiceCard({ voice, isSelected, onSelect }: VoiceCardProp
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
-        p: 2,
+        p: 0.5,
         borderRadius: 2,
         cursor: 'pointer',
         backgroundColor: isSelected ? 'rgba(255, 199, 0, 0.1)' : 'transparent',
         border: isSelected ? '1px solid' : 'none',
         borderColor: isSelected ? 'primary.main' : 'transparent',
-        minHeight: 72, // 固定标准高度
+        minHeight: 80, // 扩大高度到80px
         '&:hover': {
           backgroundColor: 'rgba(0, 0, 0, 0.04)',
         },
@@ -43,6 +43,13 @@ export default function VoiceCard({ voice, isSelected, onSelect }: VoiceCardProp
           sx={{
             width: 80,
             height: 80,
+            objectFit: 'cover',
+            objectPosition: 'center',
+            // 确保图片填充整个Avatar容器
+            '& img': {
+              objectFit: 'cover',
+              objectPosition: 'center',
+            },
             // 选中状态的边框效果
             boxShadow: isSelected
               ? '0 0 0 2px #FFC700, 0 0 8px 3px rgba(255, 199, 0, 0.3)'
