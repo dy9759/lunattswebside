@@ -26,7 +26,7 @@ export default function TextComposer({
       {/* Header */}
       <Box sx={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center', height: '40px' }}>
         <Typography variant="h4" sx={{ fontWeight: 'bold', color: 'textLight.main', display: 'flex', alignItems: 'center' }}>
-          Text to Speech
+          Speech Synthesis
         </Typography>
       </Box>
 

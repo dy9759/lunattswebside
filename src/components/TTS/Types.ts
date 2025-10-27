@@ -10,6 +10,7 @@ export interface VoiceScene {
   name: string;
   icon: string;
   description: string;
+  imageUrl?: string; // 新增背景图片URL字段
 }
 
 export interface TextComposerProps {

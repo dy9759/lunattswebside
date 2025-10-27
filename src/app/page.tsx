@@ -63,21 +63,94 @@ export default function Home() {
   const [generatedAudioUrl, setGeneratedAudioUrl] = useState<string | undefined>('https://lunalab-res.oss-cn-hangzhou.aliyuncs.com/userAudio/female_m7SBz8yb.wav');
   const [selectedModalVoice, setSelectedModalVoice] = useState<Voice | null>(null);
   const [selectedSceneTab, setSelectedSceneTab] = useState<number>(0);
+  const [selectedSceneId, setSelectedSceneId] = useState<number | null>(null);
 
-  // 定义使用场景数据 - 12个场景，符合图片要求
+  // 定义使用场景数据 - 12个场景，包含背景图片URL（英文版本）
   const voiceScenes: VoiceScene[] = [
-    { id: 0, name: '广告配音', icon: '📢🎬', description: '专业广告配音服务' },
-    { id: 1, name: '有声读物', icon: '📚📖', description: '有声书朗读' },
-    { id: 2, name: '客服', icon: '🎧📞', description: '客户服务语音' },
-    { id: 3, name: '游戏解说', icon: '🎮🎤', description: '游戏旁白解说' },
-    { id: 4, name: '影视解说', icon: '🎬📽️', description: '影视节目解说' },
-    { id: 5, name: '纪录片', icon: '📹🌍', description: '纪录片配音' },
-    { id: 6, name: '新闻播报', icon: '📰📺', description: '新闻主播播报' },
-    { id: 7, name: '教学课件', icon: '🎓📋', description: '教学内容配音' },
-    { id: 8, name: '地铁广播', icon: '🚇📢', description: '地铁到站广播' },
-    { id: 9, name: '公交到站广播', icon: '🚌📍', description: '公交车报站' },
-    { id: 10, name: '专题片', icon: '📊📽️', description: '专题片配音' },
-    { id: 11, name: '智能助手', icon: '🤖💬', description: 'AI智能助手语音' }
+    {
+      id: 0,
+      name: 'Advertisement Voice-over',
+      icon: '📢🎬',
+      description: 'Professional advertising voice services',
+      imageUrl: 'https://images.unsplash.com/photo-1591115765375-afa55b8a6c77?w=400&h=225&fit=crop' // 专业录音棚
+    },
+    {
+      id: 1,
+      name: 'Audiobook Narration',
+      icon: '📚📖',
+      description: 'Professional audiobook narration',
+      imageUrl: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&h=225&fit=crop' // 书籍阅读
+    },
+    {
+      id: 2,
+      name: 'Customer Service',
+      icon: '🎧📞',
+      description: 'Customer service voice solutions',
+      imageUrl: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=225&fit=crop' // 呼叫中心
+    },
+    {
+      id: 3,
+      name: 'Game Commentary',
+      icon: '🎮🎤',
+      description: 'Game narration and commentary',
+      imageUrl: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=400&h=225&fit=crop' // 游戏设备
+    },
+    {
+      id: 4,
+      name: 'Film Narration',
+      icon: '🎬📽️',
+      description: 'Film and program narration services',
+      imageUrl: 'https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=400&h=225&fit=crop' // 电影拍摄
+    },
+    {
+      id: 5,
+      name: 'Documentary Voice-over',
+      icon: '📹🌍',
+      description: 'Documentary and nature narration',
+      imageUrl: 'https://images.unsplash.com/photo-1603796846097-bee99e4a601f?w=400&h=225&fit=crop' // 自然风光
+    },
+    {
+      id: 6,
+      name: 'News Broadcasting',
+      icon: '📰📺',
+      description: 'Professional news anchor services',
+      imageUrl: 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=400&h=225&fit=crop' // 新闻演播室
+    },
+    {
+      id: 7,
+      name: 'Educational Content',
+      icon: '🎓📋',
+      description: 'Educational content voice-over',
+      imageUrl: 'https://images.unsplash.com/photo-1589571894960-20bbe2828d0a?w=400&h=225&fit=crop' // 教室场景
+    },
+    {
+      id: 8,
+      name: 'Metro Announcements',
+      icon: '🚇📢',
+      description: 'Metro station announcements',
+      imageUrl: 'https://images.unsplash.com/photo-1473218688616-78ac61ab5ec9?w=400&h=225&fit=crop' // 地铁站
+    },
+    {
+      id: 9,
+      name: 'Bus Stop Announcements',
+      icon: '🚌📍',
+      description: 'Public transportation announcements',
+      imageUrl: 'https://images.unsplash.com/photo-1573504945404-b36343227a43?w=400&h=225&fit=crop' // 公交车
+    },
+    {
+      id: 10,
+      name: 'Special Feature Voice-over',
+      icon: '📊📽️',
+      description: 'Special program and feature narration',
+      imageUrl: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=400&h=225&fit=crop' // 纪录片制作
+    },
+    {
+      id: 11,
+      name: 'AI Assistant Voice',
+      icon: '🤖💬',
+      description: 'AI assistant and smart voice solutions',
+      imageUrl: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=400&h=225&fit=crop' // AI科技
+    }
   ];
 
   const handleVoiceSelect = (voice: Voice) => {
@@ -95,6 +168,12 @@ export default function Home() {
 
   const handleOpenSceneModal = () => {
     setSelectedModalVoice(currentVoice);
+  };
+
+  const handleSceneSelect = (sceneId: number, scene: VoiceScene) => {
+    setSelectedSceneId(sceneId);
+    console.log(`Selected scene: ${scene.name} (ID: ${sceneId})`);
+    // 这里可以添加更多的场景选择逻辑
   };
 
   return (
@@ -239,75 +318,112 @@ export default function Home() {
                 <Card
                   key={scene.id}
                   sx={{
-                    p: 2,
+                    position: 'relative',
                     width: '100%',
-                    height: 'auto', // 高度由aspect-ratio控制
-                    aspectRatio: '2 / 1', // 宽高比2:1，高度为宽度的1/2
-                    minHeight: '60px', // 最小高度确保可用性
-                    display: 'flex',
-                    flexDirection: 'row',
-                    alignItems: 'center',
+                    height: 'auto',
+                    aspectRatio: '16 / 9', // 改为更宽屏的比例
+                    minHeight: '120px', // 增加最小高度以容纳背景图片
                     cursor: 'pointer',
-                    transition: 'all 0.3s ease',
-                    border: 'none',
+                    transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+                    border: selectedSceneId === scene.id ? '2px solid' : 'none',
+                    borderColor: 'primary.main',
                     borderRadius: 3,
+                    overflow: 'hidden', // 关键：确保内容不会超出边界
                     backgroundColor: 'background.paper',
-                    gap: 2,
-                    '@supports not (aspect-ratio: 2/1)': {
+
+                    // 选中状态的样式
+                    ...(selectedSceneId === scene.id && {
+                      boxShadow: `
+                        0 0 0 3px ${theme.palette.primary.main}33,
+                        0 8px 24px rgba(0, 0, 0, 0.15),
+                        0 0 0 1px rgba(255, 255, 255, 0.1),
+                        0 0 0 1px rgba(255, 199, 0, 0.2)
+                      `,
+                      transform: 'translateY(-4px) scale(1.02)',
+                    }),
+
+                    // 非选中状态的悬停效果
+                    ...(selectedSceneId !== scene.id && {
+                      '&:hover': {
+                        transform: 'translateY(-2px)',
+                        boxShadow: 6,
+                      },
+                    }),
+
+                    // 选中状态的悬停效果
+                    ...(selectedSceneId === scene.id && {
+                      '&:hover': {
+                        transform: 'translateY(-6px) scale(1.03)',
+                        boxShadow: `
+                          0 0 0 4px ${theme.palette.primary.main}40,
+                          0 12px 32px rgba(0, 0, 0, 0.2),
+                          0 0 0 2px rgba(255, 255, 255, 0.15),
+                          0 0 0 1px rgba(255, 199, 0, 0.3)
+                        `,
+                      },
+                    }),
+
+                    '@supports not (aspect-ratio: 16/9)': {
                       // 降级方案：不支持aspect-ratio的浏览器
-                      height: '80px',
-                      minHeight: '80px',
-                    },
-                    '&:hover': {
-                      transform: 'translateY(-4px)',
-                      boxShadow: 6,
-                      backgroundColor: 'primary.50',
-                    },
-                    '&:active': {
-                      transform: 'translateY(-2px)',
+                      height: '120px',
+                      minHeight: '120px',
                     },
                   }}
-                  onClick={() => {
-                    // 这里可以添加选择场景的逻辑
-                    console.log(`Selected scene: ${scene.name}`);
-                  }}
+                  onClick={() => handleSceneSelect(scene.id, scene)}
                 >
-                  {/* 左侧图标区域 */}
+                  {/* 背景图片 */}
+                  <Box
+                    component="img"
+                    src={scene.imageUrl}
+                    alt={scene.name}
+                    sx={{
+                      position: 'absolute',
+                      top: 0,
+                      left: 0,
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'cover',
+                      zIndex: 1,
+                    }}
+                  />
+
+                  {/* 半透明遮罩层 - 确保文字可读性 */}
                   <Box
                     sx={{
-                      width: {
-                        xs: 48,
-                        sm: 56,
-                        md: 64,
-                      },
-                      height: {
-                        xs: 48,
-                        sm: 56,
-                        md: 64,
-                      },
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      fontSize: {
-                        xs: '1.5rem',
-                        sm: '1.75rem',
-                        md: '2rem',
-                      },
-                      flexShrink: 0,
+                      position: 'absolute',
+                      top: 0,
+                      left: 0,
+                      width: '100%',
+                      height: '100%',
+                      background: 'linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.7) 100%)',
+                      zIndex: 2,
+                    }}
+                  />
+
+                  {/* 文字内容覆盖层 */}
+                  <Box
+                    sx={{
+                      position: 'absolute',
+                      bottom: 16,
+                      left: 16,
+                      right: 16,
+                      zIndex: 3,
+                      textAlign: 'left',
                     }}
                   >
-                    {scene.icon}
-                  </Box>
-
-                  {/* 右侧文字区域 */}
-                  <Box sx={{ flexGrow: 1 }}>
                     {/* Scene Name */}
                     <Typography
                       variant="h6"
                       sx={{
                         fontWeight: 'bold',
-                        color: 'text.primary',
+                        color: 'white',
                         mb: 0.5,
+                        textShadow: '0 2px 4px rgba(0,0,0,0.8)',
+                        fontSize: {
+                          xs: '16px',
+                          sm: '17px',
+                          md: '18px',
+                        },
                       }}
                     >
                       {scene.name}
@@ -316,9 +432,15 @@ export default function Home() {
                     {/* Scene Description */}
                     <Typography
                       variant="body2"
-                      color="text.secondary"
                       sx={{
-                        fontSize: '0.875rem',
+                        color: 'rgba(255,255,255,0.9)',
+                        fontSize: {
+                          xs: '12px',
+                          sm: '13px',
+                          md: '14px',
+                        },
+                        textShadow: '0 1px 2px rgba(0,0,0,0.8)',
+                        lineHeight: 1.4,
                       }}
                     >
                       {scene.description}

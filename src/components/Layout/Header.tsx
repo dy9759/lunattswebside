@@ -81,7 +81,7 @@ const Header = () => {
               sx={{
                 fontWeight: 800,
                 letterSpacing: '-0.025em',
-                fontSize: { xs: '1rem', sm: '1.1rem', md: '1.3rem' },
+                fontSize: '20px',
                 background: `linear-gradient(45deg, ${theme.palette.primary.main}, ${theme.palette.secondary.main})`,
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
