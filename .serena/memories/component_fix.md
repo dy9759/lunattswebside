@@ -1,0 +1,1 @@
+Fixed MainVoiceDisplay component syntax errors by recreating file with clean JSX/TypeScript syntax. Removed problematic characters and ensured proper string termination. Icon positioned on same line as title using flexbox, description aligned to bottom-left.
