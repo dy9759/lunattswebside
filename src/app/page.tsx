@@ -269,7 +269,7 @@ export default function Home() {
           >
             <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
               <Typography variant="h5" sx={{ flexGrow: 1, textAlign: 'left', pl: 1 }}>
-                场景选择
+                Scene Selection
               </Typography>
               <Button
                 onClick={() => setSelectedModalVoice(null)}
@@ -415,15 +415,12 @@ export default function Home() {
                     <Typography
                       variant="h6"
                       sx={{
-                        fontWeight: 'bold',
+                        fontWeight: 'semibold',
                         color: 'white',
-                        mb: 0.5,
-                        textShadow: '0 2px 4px rgba(0,0,0,0.8)',
-                        fontSize: {
-                          xs: '16px',
-                          sm: '17px',
-                          md: '18px',
-                        },
+                        borderRadius: 1,
+                        p: 1,
+                        textAlign: 'left',
+                        fontSize: '18px'
                       }}
                     >
                       {scene.name}
@@ -433,14 +430,11 @@ export default function Home() {
                     <Typography
                       variant="body2"
                       sx={{
-                        color: 'rgba(255,255,255,0.9)',
-                        fontSize: {
-                          xs: '12px',
-                          sm: '13px',
-                          md: '14px',
-                        },
-                        textShadow: '0 1px 2px rgba(0,0,0,0.8)',
-                        lineHeight: 1.4,
+                        color: 'white',
+                        borderRadius: 1,
+                        p: 1, // 8px padding (MUI spacing: 8px × 1 = 8px)
+                        textAlign: 'left',
+                        fontSize: '12px'
                       }}
                     >
                       {scene.description}
@@ -472,9 +466,12 @@ export default function Home() {
                 }
               }}
               sx={(theme) => ({
-                background: `linear-gradient(45deg, ${theme.palette.primary.main}, ${theme.palette.secondary.main})`,
+                // 根据是否选择了场景来决定背景渐变
+                background: selectedSceneId !== null
+                  ? `linear-gradient(45deg, ${theme.palette.primary.main}, ${theme.palette.secondary.main})`
+                  : 'linear-gradient(45deg, #9e9e9e, #757575)', // 灰色渐变
                 color: 'white',
-                borderRadius: '16px', // 使用固定圆角值而不是50%
+                borderRadius: '9999px', // 使用极大圆角值实现button高度的一半效果
                 height: '50%', // 动态高度：父容器的1/2
                 width: 'auto', // 宽度由aspect-ratio自动计算
                 aspectRatio: '2 / 1', // 宽高比2:1，确保宽度是高度的2倍
@@ -486,7 +483,10 @@ export default function Home() {
                 fontSize: '16px',
                 fontWeight: 'bold',
                 textTransform: 'none',
-                boxShadow: '0 4px 15px rgba(255, 199, 0, 0.3)',
+                // 根据选择状态设置阴影
+                boxShadow: selectedSceneId !== null
+                  ? '0 4px 15px rgba(255, 199, 0, 0.3)' // 黄色阴影
+                  : '0 4px 15px rgba(0, 0, 0, 0.2)', // 灰色阴影
                 border: 'none',
                 position: 'relative',
                 overflow: 'hidden',
@@ -504,21 +504,31 @@ export default function Home() {
                   transition: 'left 0.5s',
                 },
                 '&:hover': {
-                  background: 'linear-gradient(45deg, #B38B00, #FF6B35)',
+                  // 悬停时根据选择状态使用不同的渐变
+                  background: selectedSceneId !== null
+                    ? 'linear-gradient(45deg, #B38B00, #FF6B35)' // 黄色悬停
+                    : 'linear-gradient(45deg, #757575, #616161)', // 深灰色悬停
                   transform: 'scale(1.05)',
-                  boxShadow: '0 8px 25px rgba(255, 199, 0, 0.4)',
+                  // 悬停时根据选择状态设置不同的阴影
+                  boxShadow: selectedSceneId !== null
+                    ? '0 8px 25px rgba(255, 199, 0, 0.4)' // 增强的黄色阴影
+                    : '0 8px 25px rgba(0, 0, 0, 0.3)', // 增强的灰色阴影
                   '&:before': {
                     left: '100%',
                   },
                 },
                 '&:active': {
                   transform: 'scale(1.02)',
-                  boxShadow: '0 4px 15px rgba(255, 199, 0, 0.3)',
+                  // 激活时根据选择状态设置阴影
+                  boxShadow: selectedSceneId !== null
+                    ? '0 4px 15px rgba(255, 199, 0, 0.3)' // 黄色阴影
+                    : '0 4px 15px rgba(0, 0, 0, 0.2)', // 灰色阴影
                 },
                 transition: 'all 0.3s ease',
+                // 添加过渡效果以平滑切换颜色
               })}
             >
-              确认
+              Confirm
             </Button>
           </Box>
         </Box>

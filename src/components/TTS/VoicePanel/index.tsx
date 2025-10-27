@@ -13,7 +13,6 @@ export default function VoicePanel({
   onOpenSceneModal,
 }: VoicePanelProps) {
   const theme = useTheme();
-  const [activeTab, setActiveTab] = useState<'voice' | 'settings'>('voice');
   const handleMainVoiceClick = () => {
     onVoiceSelect(voices[0]); // Storyteller as default
     onOpenSceneModal();
@@ -45,71 +44,29 @@ export default function VoicePanel({
         <CardHeader
           title={
             <Box sx={{ display: 'flex', width: '100%' }}>
-              {/* 左侧选框 - Voice Selection */}
               <Box
-                onClick={() => setActiveTab('voice')}
                 sx={{
-                  flex: 1,
-                  textAlign: 'center',
+                  width: '50%',
+                  textAlign: 'left',
                   py: 1,
                   px: 2,
-                  cursor: 'pointer',
-                  borderBottom: activeTab === 'voice'
-                    ? `2px solid ${theme.palette.primary.main}`
-                    : `2px solid transparent`,
+                  borderBottom: `2px solid ${theme.palette.primary.main}`,
                   transition: 'all 0.3s ease',
-                  '&:hover': {
-                    backgroundColor: 'action.hover',
-                  }
                 }}
               >
                 <Typography
                   variant="h5"
                   sx={{
                     fontWeight: "bold",
-                    color: activeTab === 'voice' ? "textLight.main" : "subtleLight.main",
+                    color: "textLight.main",
                     fontSize: "1.125rem",
                     display: "flex",
                     alignItems: "center",
-                    justifyContent: "center",
+                    justifyContent: "flex-start",
                     height: "40px"
                   }}
                 >
                   Voice Selection
-                </Typography>
-              </Box>
-
-              {/* 右侧选框 - Settings */}
-              <Box
-                onClick={() => setActiveTab('settings')}
-                sx={{
-                  flex: 1,
-                  textAlign: 'center',
-                  py: 1,
-                  px: 2,
-                  cursor: 'pointer',
-                  borderBottom: activeTab === 'settings'
-                    ? `2px solid ${theme.palette.primary.main}`
-                    : `2px solid transparent`,
-                  transition: 'all 0.3s ease',
-                  '&:hover': {
-                    backgroundColor: 'action.hover',
-                  }
-                }}
-              >
-                <Typography
-                  variant="h5"
-                  sx={{
-                    fontWeight: "bold",
-                    color: activeTab === 'settings' ? "textLight.main" : "subtleLight.main",
-                    fontSize: "1.125rem",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    height: "40px"
-                  }}
-                >
-                  Settings
                 </Typography>
               </Box>
             </Box>
