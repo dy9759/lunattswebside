@@ -70,20 +70,18 @@ export default function MainVoiceDisplay({ voice, isSelected, onClick }: MainVoi
         sx={{
           position: 'relative',
           zIndex: 3,
-          p: 3,
+          p: 2, // 减少padding
           width: '100%',
           aspectRatio: '2 / 1', // 宽高比2:1，高度为宽度的一半
           display: 'flex',
           flexDirection: 'column',
-          justifyContent: 'space-between',
-          minHeight: 120, // 确保最小可用高度
+          justifyContent: 'flex-start', // 向上对齐，上方留白
+          minHeight: 100, // 减少最小高度
+          overflow: 'hidden', // 确保不溢出
         }}
       >
-        {/* 顶部占位 - 保持布局平衡 */}
-        <Box />
-
-        {/* 左下对齐的文字内容 */}
-        <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1, alignItems: 'flex-start', justifyContent: 'flex-end', height: '100%' }}>
+        {/* 左上对齐的文字内容 */}
+        <Box sx={{ display: 'flex', flexDirection: 'column', gap: 0.5, alignItems: 'flex-start', marginTop: 'auto' }}>
           {/* 标题和图标在同一行 */}
           <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
             <Typography
@@ -92,7 +90,7 @@ export default function MainVoiceDisplay({ voice, isSelected, onClick }: MainVoi
                 fontWeight: 'semibold',
                 color: 'white',
                 borderRadius: 1,
-                p: 1,
+                p: 0.5, // 减少padding
                 textAlign: 'left',
                 fontSize: '18px'
               }}
@@ -139,13 +137,14 @@ export default function MainVoiceDisplay({ voice, isSelected, onClick }: MainVoi
             </Box>
           </Box>
 
-          {/* 描述文字单独一行，左对齐 */}
+          {/* 描述文字单独一行，左对齐，减少padding */}
           <Typography
             variant="body2"
             sx={{
               color: 'white',
               borderRadius: 1,
-              p: 1, // 8px padding (MUI spacing: 8px × 1 = 8px)
+              p: 0.5, // 减少padding
+              pt: 0.25, // 顶部padding更小
               textAlign: 'left',
               fontSize: '12px',
               width: '100%', // 确保占满宽度
